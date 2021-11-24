@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E67-fh-rqZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="oZ6-N2-DN3">
+            <objects>
+                <navigationController id="E67-fh-rqZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Htf-L8-U3N">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="02h-Dg-rGb" kind="relationship" relationship="rootViewController" id="fCf-T1-pbm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6M-Bf-7ky" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3226" y="-1090"/>
+        </scene>
+        <!--萤石 SDK 示例-->
+        <scene sceneID="YJT-V2-lsu">
+            <objects>
+                <viewController id="02h-Dg-rGb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xq8-CA-SpE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xi4-YK-ku0">
+                                <rect key="frame" x="40" y="736" width="334" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="BCD-nl-fm5"/>
+                                </constraints>
+                                <state key="normal" title="开始使用">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="KkG-5a-boa" kind="show" id="oJv-is-r8V"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前版本: 1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qn-S9-Fsg">
+                                <rect key="frame" x="159.5" y="830" width="95" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oft-Sf-8Bm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xi4-YK-ku0" firstAttribute="leading" secondItem="oft-Sf-8Bm" secondAttribute="leading" constant="40" id="9n2-Au-Rha"/>
+                            <constraint firstItem="9qn-S9-Fsg" firstAttribute="top" secondItem="xi4-YK-ku0" secondAttribute="bottom" constant="50" id="j4f-6s-ZzK"/>
+                            <constraint firstItem="oft-Sf-8Bm" firstAttribute="bottom" secondItem="9qn-S9-Fsg" secondAttribute="bottom" constant="15" id="jLR-eF-15G"/>
+                            <constraint firstItem="9qn-S9-Fsg" firstAttribute="centerX" secondItem="xq8-CA-SpE" secondAttribute="centerX" id="kaw-a9-YmF"/>
+                            <constraint firstItem="oft-Sf-8Bm" firstAttribute="trailing" secondItem="xi4-YK-ku0" secondAttribute="trailing" constant="40" id="mWZ-vp-h3v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="萤石 SDK 示例" id="fKE-MG-VdG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udU-81-0uc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2339" y="-1090"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="b8l-uS-hLF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="KkG-5a-boa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fc5-IZ-tH8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g2z-5c-Hn5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1666" y="-1090"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

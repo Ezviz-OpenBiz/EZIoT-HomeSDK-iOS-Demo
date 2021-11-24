@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oQh-0I-cwS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="v3C-a0-jWU">
+            <objects>
+                <tableViewController title="首页" id="csl-bq-6gh" customClass="EZIoTHomePageVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="dnN-8T-N8w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection headerTitle="家庭管理" id="uEo-Zq-1zU">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="m6J-IG-brM" detailTextLabel="Nw6-8F-wRz" style="IBUITableViewCellStyleValue1" id="SUF-MP-bG3">
+                                        <rect key="frame" x="20" y="49.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SUF-MP-bG3" id="M1K-JG-Fs9">
+                                            <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="当前家庭" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m6J-IG-brM">
+                                                    <rect key="frame" x="20" y="12" width="65.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nw6-8F-wRz">
+                                                    <rect key="frame" x="294.5" y="12" width="42" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Pis-vr-bu5" style="IBUITableViewCellStyleDefault" id="GvG-kZ-oH6">
+                                        <rect key="frame" x="20" y="93" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GvG-kZ-oH6" id="NlU-tm-pfd">
+                                            <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="家庭列表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pis-vr-bu5">
+                                                    <rect key="frame" x="20" y="0.0" width="316.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="FG8-jR-TYP" kind="show" id="OqA-Nj-XQ7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Uu3-Wk-bvR" style="IBUITableViewCellStyleDefault" id="wvl-hX-ppu">
+                                        <rect key="frame" x="20" y="136.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wvl-hX-ppu" id="sO5-Cc-uqY">
+                                            <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="创建家庭" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uu3-Wk-bvR">
+                                                    <rect key="frame" x="20" y="0.0" width="316.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="b74-X9-fKS" kind="show" id="fOz-mK-ra4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="房间管理" id="ztd-Ck-ne8">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="JLG-cE-7xW" detailTextLabel="eCi-lq-KPe" style="IBUITableViewCellStyleValue1" id="f1f-ex-wwd">
+                                        <rect key="frame" x="20" y="230" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f1f-ex-wwd" id="fYA-zX-PZa">
+                                            <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="当前房间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JLG-cE-7xW">
+                                                    <rect key="frame" x="20" y="12" width="65.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eCi-lq-KPe">
+                                                    <rect key="frame" x="294.5" y="12" width="42" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="AeS-at-e5c" style="IBUITableViewCellStyleDefault" id="z43-QB-UjL">
+                                        <rect key="frame" x="20" y="273.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z43-QB-UjL" id="e8K-jl-vQV">
+                                            <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="房间列表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AeS-at-e5c">
+                                                    <rect key="frame" x="20" y="0.0" width="316.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Gh8-NT-DhY" style="IBUITableViewCellStyleDefault" id="HUE-KW-XOH">
+                                        <rect key="frame" x="20" y="317" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HUE-KW-XOH" id="X4l-Kg-QR0">
+                                            <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="创建房间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gh8-NT-DhY">
+                                                    <rect key="frame" x="20" y="0.0" width="316.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="设备管理" id="gXu-hl-fyF">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="eLP-Ec-hVs" style="IBUITableViewCellStyleDefault" id="q3O-xn-cNK">
+                                        <rect key="frame" x="20" y="410.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q3O-xn-cNK" id="3cC-11-su5">
+                                            <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="设备列表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eLP-Ec-hVs">
+                                                    <rect key="frame" x="20" y="0.0" width="316.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="csl-bq-6gh" id="TaW-eC-FJ0"/>
+                            <outlet property="delegate" destination="csl-bq-6gh" id="yhk-7B-Oh0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="首页" id="uPj-3C-TE5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="IjT-Qx-TmE">
+                            <color key="tintColor" systemColor="systemBlueColor"/>
+                            <connections>
+                                <action selector="ClickAddDeviceBtn:" destination="csl-bq-6gh" id="a6u-k5-cJl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="curFamilyLabel" destination="Nw6-8F-wRz" id="bEQ-9W-nl0"/>
+                        <outlet property="curRoomLabel" destination="eCi-lq-KPe" id="5Qm-An-J5C"/>
+                        <segue destination="x3c-oK-sSZ" kind="show" identifier="ShowFamilyDetailVC" id="j1F-Kg-bmJ"/>
+                        <segue destination="BzY-Aw-bdo" kind="show" identifier="ShowRoomMgrVC" id="Js4-vA-b38"/>
+                        <segue destination="eoK-q3-SVC" kind="show" identifier="ShowAddDeviceVC" id="mEm-zt-rN0"/>
+                        <segue destination="31g-wf-sWk" kind="show" identifier="ShowGroupListVC" id="YVL-40-f0B"/>
+                        <segue destination="oDr-yr-rz2" kind="show" identifier="ShowDeviceListVC" id="Xeh-8h-2Bj"/>
+                        <segue destination="6pu-o8-bzx" kind="show" identifier="ShowCreateRoomVC" id="Thf-Vi-0oa"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5DN-uw-bcg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1447.8260869565217" y="-1416.2946428571429"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="Fnu-w1-v6E">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oQh-0I-cwS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="Home" id="AXm-9g-KyF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="N9a-XG-8rP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="csl-bq-6gh" kind="relationship" relationship="rootViewController" id="yrD-eA-fD8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eE5-6v-vLk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537.68115942028987" y="-1416.2946428571429"/>
+        </scene>
+        <!--EZIoTFamilyDetailVC-->
+        <scene sceneID="xvv-Xs-MwE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Family" referencedIdentifier="EZIoTFamilyDetailVC" id="x3c-oK-sSZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2Yu-VE-wnV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEA-YM-9ac" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2142" y="-1371"/>
+        </scene>
+        <!--EZIoTCreateFamilyVC-->
+        <scene sceneID="Bok-8c-XFS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Family" referencedIdentifier="EZIoTCreateFamilyVC" id="b74-X9-fKS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="npu-zg-R5m"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="miI-sh-Eb7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2140" y="-1509"/>
+        </scene>
+        <!--EZIoTFamilyListVC-->
+        <scene sceneID="xrL-S3-5hu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Family" referencedIdentifier="EZIoTFamilyListVC" id="FG8-jR-TYP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="61a-0U-PA3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xpA-cZ-CP8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2128" y="-1553"/>
+        </scene>
+        <!--EZIoTAddDeviceVC-->
+        <scene sceneID="DCa-pX-7VT">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="EZIoTAddDeviceVC" storyboardName="AddDevice" referencedIdentifier="EZIoTAddDeviceVC" id="eoK-q3-SVC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PKA-CY-pNM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7iY-ON-fUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134" y="-1288"/>
+        </scene>
+        <!--EZIoTRoomMgrVC-->
+        <scene sceneID="AVG-tX-skv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Room" referencedIdentifier="EZIoTRoomMgrVC" id="BzY-Aw-bdo" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="24L-tf-zef"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3SI-iC-OrJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134" y="-1329"/>
+        </scene>
+        <!--EZIoTGroupListVC-->
+        <scene sceneID="gTO-IW-c1G">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="EZIoTGroupListVC" storyboardName="Room" referencedIdentifier="EZIoTGroupListVC" id="31g-wf-sWk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cfP-Rj-Qpx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyB-Jk-aAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134" y="-1416"/>
+        </scene>
+        <!--EZIoTCreateGroupVC-->
+        <scene sceneID="DH4-2K-IJ9">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="EZIoTCreateGroupVC" storyboardName="Room" referencedIdentifier="EZIoTCreateGroupVC" id="6pu-o8-bzx" userLabel="EZIoTCreateGroupVC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2fI-ou-3ln"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zn8-tE-qVI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2143" y="-1460"/>
+        </scene>
+        <!--Device-->
+        <scene sceneID="IIC-RN-NXk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Device" id="oDr-yr-rz2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GAd-nq-Pbx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KMj-5V-8J3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2083" y="-1242"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home" width="24" height="24"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

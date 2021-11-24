@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9B2-dH-eRr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--设备添加-->
+        <scene sceneID="HVx-J4-0aN">
+            <objects>
+                <tableViewController storyboardIdentifier="EZIoTAddDeviceVC" hidesBottomBarWhenPushed="YES" id="9B2-dH-eRr" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Cbq-mH-pYZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection headerTitle="配网方式" id="Ww0-YW-K83">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Rrh-wD-W2O" style="IBUITableViewCellStyleDefault" id="9wo-uu-8Gq">
+                                        <rect key="frame" x="20" y="49.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9wo-uu-8Gq" id="80R-VP-maS">
+                                            <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Fast AP Config" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rrh-wD-W2O">
+                                                    <rect key="frame" x="20" y="0.0" width="316.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="O4m-L2-EYc" kind="show" id="KXe-Pj-CxM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="9B2-dH-eRr" id="GkB-pU-0ia"/>
+                            <outlet property="delegate" destination="9B2-dH-eRr" id="whs-5a-o7T"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="设备添加" id="Bdr-Lo-lTj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n9h-gd-Jei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2930" y="-1491"/>
+        </scene>
+        <!--Fast AP Config-->
+        <scene sceneID="Vhv-Ac-lxd">
+            <objects>
+                <tableViewController title="Fast AP Config" modalPresentationStyle="fullScreen" id="O4m-L2-EYc" customClass="EZIoTFastApConfigVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="S40-mW-iTk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection headerTitle="步骤一：将设备置为配网状态，并将手机连接至设备热点" id="46R-IJ-WuC">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="yjZ-vM-j3I">
+                                        <rect key="frame" x="20" y="49.5" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yjZ-vM-j3I" id="QHF-vt-cqi">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SE-29-7zW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                                    <state key="normal" title="跳转系统设置页"/>
+                                                    <connections>
+                                                        <action selector="clickJumpToSystemPage:" destination="O4m-L2-EYc" eventType="touchUpInside" id="iXy-fK-mgy"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3SE-29-7zW" firstAttribute="top" secondItem="QHF-vt-cqi" secondAttribute="top" id="MEP-74-Tif"/>
+                                                <constraint firstAttribute="bottom" secondItem="3SE-29-7zW" secondAttribute="bottom" id="ayj-De-qCg"/>
+                                                <constraint firstItem="3SE-29-7zW" firstAttribute="leading" secondItem="QHF-vt-cqi" secondAttribute="leading" id="az0-OF-DBo"/>
+                                                <constraint firstAttribute="trailing" secondItem="3SE-29-7zW" secondAttribute="trailing" id="iSm-C6-jIA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="步骤二：填写路由器WiFi信息" id="Hxo-qw-his">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="44" id="NVn-jV-4qy">
+                                        <rect key="frame" x="20" y="143.5" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NVn-jV-4qy" id="JRj-V1-O4m">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="WiFI SSID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1mS-7i-p1z">
+                                                    <rect key="frame" x="20" y="0.0" width="354" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1mS-7i-p1z" firstAttribute="leading" secondItem="JRj-V1-O4m" secondAttribute="leading" constant="20" id="6b3-bL-kLS"/>
+                                                <constraint firstAttribute="bottom" secondItem="1mS-7i-p1z" secondAttribute="bottom" id="8VP-9K-oc3"/>
+                                                <constraint firstItem="1mS-7i-p1z" firstAttribute="top" secondItem="JRj-V1-O4m" secondAttribute="top" id="TT7-sE-yVB"/>
+                                                <constraint firstAttribute="trailing" secondItem="1mS-7i-p1z" secondAttribute="trailing" id="kAd-AR-TWR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="44" id="SOm-3I-z8D">
+                                        <rect key="frame" x="20" y="187.5" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SOm-3I-z8D" id="ZCe-wN-5Ir">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="WiFi Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mgm-qP-NC3">
+                                                    <rect key="frame" x="20" y="0.0" width="354" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Mgm-qP-NC3" secondAttribute="bottom" id="47x-x0-dFQ"/>
+                                                <constraint firstItem="Mgm-qP-NC3" firstAttribute="leading" secondItem="ZCe-wN-5Ir" secondAttribute="leading" constant="20" id="UIw-pp-bmg"/>
+                                                <constraint firstAttribute="trailing" secondItem="Mgm-qP-NC3" secondAttribute="trailing" id="bGd-Xr-yaG"/>
+                                                <constraint firstItem="Mgm-qP-NC3" firstAttribute="top" secondItem="ZCe-wN-5Ir" secondAttribute="top" id="nd5-42-Zho"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="步骤三：开始配网" id="ZU6-qN-oxS">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="44" id="5Ew-4l-ddP">
+                                        <rect key="frame" x="20" y="281.5" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Ew-4l-ddP" id="MFz-6C-6v7">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Gz-nf-C8V">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                                    <state key="normal" title="开始配网"/>
+                                                    <connections>
+                                                        <action selector="clickStartConfig:" destination="O4m-L2-EYc" eventType="touchUpInside" id="WWy-Ui-A66"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="6Gz-nf-C8V" secondAttribute="bottom" id="IoN-8P-vT9"/>
+                                                <constraint firstItem="6Gz-nf-C8V" firstAttribute="top" secondItem="MFz-6C-6v7" secondAttribute="top" id="nfc-aY-1wy"/>
+                                                <constraint firstAttribute="trailing" secondItem="6Gz-nf-C8V" secondAttribute="trailing" id="rLc-WR-9NP"/>
+                                                <constraint firstItem="6Gz-nf-C8V" firstAttribute="leading" secondItem="MFz-6C-6v7" secondAttribute="leading" id="wSw-lP-eUM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="44" id="6tR-uS-EjY">
+                                        <rect key="frame" x="20" y="325.5" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6tR-uS-EjY" id="zB6-jF-low">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLV-De-d0Z">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                                    <state key="normal" title="停止配网"/>
+                                                    <connections>
+                                                        <action selector="clickStopConfig:" destination="O4m-L2-EYc" eventType="touchUpInside" id="2AW-Wv-5gb"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wLV-De-d0Z" firstAttribute="leading" secondItem="zB6-jF-low" secondAttribute="leading" id="CVU-Ud-DOv"/>
+                                                <constraint firstItem="wLV-De-d0Z" firstAttribute="top" secondItem="zB6-jF-low" secondAttribute="top" id="Coh-X1-vLw"/>
+                                                <constraint firstAttribute="trailing" secondItem="wLV-De-d0Z" secondAttribute="trailing" id="kbz-uj-3cb"/>
+                                                <constraint firstAttribute="bottom" secondItem="wLV-De-d0Z" secondAttribute="bottom" id="nCs-Jw-ZYp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="日志输出" id="4Q2-jc-R41">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="QlB-wO-AhR">
+                                        <rect key="frame" x="20" y="419.5" width="374" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QlB-wO-AhR" id="jI5-NS-zD7">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gMX-2U-oot">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gMX-2U-oot" firstAttribute="leading" secondItem="jI5-NS-zD7" secondAttribute="leading" id="7aG-d6-RtI"/>
+                                                <constraint firstItem="gMX-2U-oot" firstAttribute="top" secondItem="jI5-NS-zD7" secondAttribute="top" id="AqI-VC-Psz"/>
+                                                <constraint firstAttribute="bottom" secondItem="gMX-2U-oot" secondAttribute="bottom" id="Cma-XJ-yza"/>
+                                                <constraint firstAttribute="trailing" secondItem="gMX-2U-oot" secondAttribute="trailing" id="JQj-UR-deL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="O4m-L2-EYc" id="O0h-ja-Bgo"/>
+                            <outlet property="delegate" destination="O4m-L2-EYc" id="gPb-mg-SEH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Fast AP Config" id="q6D-gM-czF"/>
+                    <connections>
+                        <outlet property="logTextView" destination="gMX-2U-oot" id="hOI-q0-VN1"/>
+                        <outlet property="startConfigBtn" destination="6Gz-nf-C8V" id="k7p-dF-nLG"/>
+                        <outlet property="stopConfigBtn" destination="wLV-De-d0Z" id="YdC-dW-jEx"/>
+                        <outlet property="wifiPwdInput" destination="Mgm-qP-NC3" id="1Ee-Ws-MVe"/>
+                        <outlet property="wifiSsidInput" destination="1mS-7i-p1z" id="Ni1-3c-Rc3"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oMk-W9-K5U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3769.5652173913045" y="-1491.2946428571429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

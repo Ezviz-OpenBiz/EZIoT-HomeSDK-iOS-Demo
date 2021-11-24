@@ -1,0 +1,15 @@
+inhibit_all_warnings!
+
+platform:ios, '9.0'
+
+target 'EZIoTHomeSDKDemo' do
+    
+    pod 'Masonry', '~> 1.1.0'
+    pod 'Toast', '~> 4.0.0'
+    pod 'MBProgressHUD', '~> 1.2.0'
+    pod 'SDWebImage', '~> 5.10.0'
+    pod 'MJRefresh', '~> 3.7.2'
+    pod 'EZIoTHomeSDK', '~> 1.0.0'
+end
+
+

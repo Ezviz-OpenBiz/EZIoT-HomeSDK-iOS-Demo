@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--房间管理-->
+        <scene sceneID="vqm-Eh-avQ">
+            <objects>
+                <tableViewController storyboardIdentifier="EZIoTRoomMgrVC" title="房间管理" hidesBottomBarWhenPushed="YES" id="Vxj-YU-frT" customClass="EZIoTRoomMgrVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="w9g-Ha-b6T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EZIoTRoomMgrCell" textLabel="DMB-Xm-WmP" style="IBUITableViewCellStyleDefault" id="WtZ-Kt-Csf">
+                                <rect key="frame" x="20" y="49.5" width="374" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WtZ-Kt-Csf" id="GHu-gk-Kbu">
+                                    <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DMB-Xm-WmP">
+                                            <rect key="frame" x="20" y="0.0" width="316.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Vxj-YU-frT" id="XdI-PT-W7p"/>
+                            <outlet property="delegate" destination="Vxj-YU-frT" id="V7S-N5-aEW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="房间管理" id="h3z-9V-k6w">
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="XCr-xE-ahQ">
+                            <connections>
+                                <action selector="clickSaveBtn:" destination="Vxj-YU-frT" id="UJ8-UN-S1x"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="saveBtn" destination="XCr-xE-ahQ" id="0lh-Cl-GFz"/>
+                        <segue destination="pEk-1Y-qfO" kind="show" identifier="ShowModifyRoomVC" id="JDa-DD-hFw"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgZ-6e-jZF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3057" y="-1882"/>
+        </scene>
+        <!--房间列表-->
+        <scene sceneID="DtV-pS-D5Z">
+            <objects>
+                <tableViewController storyboardIdentifier="EZIoTGroupListVC" hidesBottomBarWhenPushed="YES" id="fkK-1v-ETk" customClass="EZIoTGroupListVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="R0s-4f-CGC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EZIoTGroupListCell" textLabel="krl-DN-gWI" detailTextLabel="v29-di-B2S" style="IBUITableViewCellStyleValue1" id="mPM-K3-byD">
+                                <rect key="frame" x="20" y="49.5" width="374" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mPM-K3-byD" id="ChX-2c-IEF">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="krl-DN-gWI">
+                                            <rect key="frame" x="20" y="12" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v29-di-B2S">
+                                            <rect key="frame" x="314.5" y="13" width="39.5" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fkK-1v-ETk" id="LK2-0Q-Lft"/>
+                            <outlet property="delegate" destination="fkK-1v-ETk" id="YPL-jd-u21"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="房间列表" id="xnG-6i-qjc"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9w7-IN-EDl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3057" y="-1221"/>
+        </scene>
+        <!--创建房间-->
+        <scene sceneID="puT-Tz-CNG">
+            <objects>
+                <tableViewController storyboardIdentifier="EZIoTCreateGroupVC" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="GFZ-GQ-44O" userLabel="创建房间" customClass="EZIoTCreateGroupVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="LSR-FN-VwE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection headerTitle="输入信息" id="gCU-na-zpb">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="44" id="q38-Wr-N2f">
+                                        <rect key="frame" x="20" y="49.5" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q38-Wr-N2f" id="V9y-mL-cJh">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="房间名称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="27u-Tr-xFM">
+                                                    <rect key="frame" x="15" y="0.0" width="359" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="27u-Tr-xFM" firstAttribute="top" secondItem="V9y-mL-cJh" secondAttribute="top" id="2Ts-NO-zdb"/>
+                                                <constraint firstAttribute="bottom" secondItem="27u-Tr-xFM" secondAttribute="bottom" id="P9P-u2-Hgo"/>
+                                                <constraint firstItem="27u-Tr-xFM" firstAttribute="leading" secondItem="V9y-mL-cJh" secondAttribute="leading" constant="15" id="cYO-Ld-PdS"/>
+                                                <constraint firstAttribute="trailing" secondItem="27u-Tr-xFM" secondAttribute="trailing" id="ifq-uQ-hmb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="ave-ze-yWY">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43.5" id="8vr-xZ-qEM">
+                                        <rect key="frame" x="20" y="129.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8vr-xZ-qEM" id="Nfm-01-LeT">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcB-Pg-iyN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                                    <state key="normal" title="创建房间"/>
+                                                    <connections>
+                                                        <action selector="clickCreateRoomBtn:" destination="GFZ-GQ-44O" eventType="touchUpInside" id="cjy-Qj-FJb"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XcB-Pg-iyN" firstAttribute="top" secondItem="Nfm-01-LeT" secondAttribute="top" id="0cw-FU-yeX"/>
+                                                <constraint firstAttribute="bottom" secondItem="XcB-Pg-iyN" secondAttribute="bottom" id="PFW-wD-VLP"/>
+                                                <constraint firstAttribute="trailing" secondItem="XcB-Pg-iyN" secondAttribute="trailing" id="lPD-QQ-5pA"/>
+                                                <constraint firstItem="XcB-Pg-iyN" firstAttribute="leading" secondItem="Nfm-01-LeT" secondAttribute="leading" id="oYw-1g-ScV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="GFZ-GQ-44O" id="f66-tj-FEn"/>
+                            <outlet property="delegate" destination="GFZ-GQ-44O" id="QM4-yR-2j3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="创建房间" id="Vpb-xV-xdh"/>
+                    <connections>
+                        <outlet property="roomNameInput" destination="27u-Tr-xFM" id="DvR-xf-FUF"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FO8-Cq-3Np" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3886" y="-1213"/>
+        </scene>
+        <!--修改房间名称-->
+        <scene sceneID="4hc-9l-BgE">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="pEk-1Y-qfO" userLabel="修改房间名称" customClass="EZIoTModifyRoomInfoVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="djE-3A-yZb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection headerTitle="输入信息" id="qeQ-hE-jTc">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="44" id="BUZ-o4-f4I">
+                                        <rect key="frame" x="20" y="49.5" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BUZ-o4-f4I" id="bbX-Xp-bnR">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="房间名称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="60z-0w-GXd">
+                                                    <rect key="frame" x="15" y="0.0" width="359" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="60z-0w-GXd" firstAttribute="top" secondItem="bbX-Xp-bnR" secondAttribute="top" id="0GM-aS-1NL"/>
+                                                <constraint firstItem="60z-0w-GXd" firstAttribute="leading" secondItem="bbX-Xp-bnR" secondAttribute="leading" constant="15" id="8W8-U1-Qwd"/>
+                                                <constraint firstAttribute="trailing" secondItem="60z-0w-GXd" secondAttribute="trailing" id="HsC-eL-OlV"/>
+                                                <constraint firstAttribute="bottom" secondItem="60z-0w-GXd" secondAttribute="bottom" id="uK4-q9-9sf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="zZz-kh-kUr">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43.5" id="FKg-jq-1ab">
+                                        <rect key="frame" x="20" y="129.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FKg-jq-1ab" id="8lF-g0-fnN">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URi-cy-6eO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                                    <state key="normal" title="修改"/>
+                                                    <connections>
+                                                        <action selector="clickModifyBtn:" destination="pEk-1Y-qfO" eventType="touchUpInside" id="S4x-bC-gDN"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="URi-cy-6eO" secondAttribute="trailing" id="3wo-dh-9W2"/>
+                                                <constraint firstItem="URi-cy-6eO" firstAttribute="top" secondItem="8lF-g0-fnN" secondAttribute="top" id="MMp-wd-KIR"/>
+                                                <constraint firstAttribute="bottom" secondItem="URi-cy-6eO" secondAttribute="bottom" id="dWK-O5-wgC"/>
+                                                <constraint firstItem="URi-cy-6eO" firstAttribute="leading" secondItem="8lF-g0-fnN" secondAttribute="leading" id="p7b-wQ-wpD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="pEk-1Y-qfO" id="cTW-Mc-eLL"/>
+                            <outlet property="delegate" destination="pEk-1Y-qfO" id="KNG-Uv-3z2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="修改房间名称" id="0KO-km-K4f"/>
+                    <connections>
+                        <outlet property="roomNameInput" destination="60z-0w-GXd" id="IlW-Tj-CnR"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gln-Nb-aiM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3864" y="-1882"/>
+        </scene>
+    </scenes>
+</document>

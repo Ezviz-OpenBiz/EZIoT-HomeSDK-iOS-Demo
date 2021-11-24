@@ -1,0 +1,865 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C51F2662706A4AA006CBA75 /* EZIoTCreateFamilyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C51F2652706A4AA006CBA75 /* EZIoTCreateFamilyVC.m */; };
+		0C51F26C2706A604006CBA75 /* EZIoTFamilyListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C51F26B2706A604006CBA75 /* EZIoTFamilyListVC.m */; };
+		0C51F2702706A638006CBA75 /* EZIoTFamilyDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C51F26F2706A638006CBA75 /* EZIoTFamilyDetailVC.m */; };
+		668CF7513844CB5706F613D7 /* libPods-EZIoTHomeSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F809EB549510331671F8079E /* libPods-EZIoTHomeSDKDemo.a */; };
+		C43E5B602705895600184B30 /* EZIoTHomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C43E5B5F2705895600184B30 /* EZIoTHomePageVC.m */; };
+		C465464B272A47A2002A14E5 /* EZIoTModifyPwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C465464A272A47A2002A14E5 /* EZIoTModifyPwdVC.m */; };
+		C465464E272A4F6C002A14E5 /* EZIoTModifyContactVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C465464D272A4F6C002A14E5 /* EZIoTModifyContactVC.m */; };
+		C48DF0792727D7E000BFE0CF /* EZIoTDeviceFeatureDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C48DF0782727D7E000BFE0CF /* EZIoTDeviceFeatureDetailVC.m */; };
+		C48DF0822728273E00BFE0CF /* EZIoTAlertInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = C48DF0812728273E00BFE0CF /* EZIoTAlertInputView.m */; };
+		C48DF0842728275800BFE0CF /* EZIoTAlertInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48DF0832728275800BFE0CF /* EZIoTAlertInputView.xib */; };
+		C48DF0872728F59600BFE0CF /* EZIoTSingleInputVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C48DF0862728F59600BFE0CF /* EZIoTSingleInputVC.m */; };
+		C48DF08C27294B4200BFE0CF /* EZIoTFamilyMemberInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C48DF08B27294B4200BFE0CF /* EZIoTFamilyMemberInfoVC.m */; };
+		C4A07C7A271D95C0009ED005 /* EZIoTGroupListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C79271D95C0009ED005 /* EZIoTGroupListVC.m */; };
+		C4A07C7D271D985F009ED005 /* EZIoTCreateGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C7C271D985F009ED005 /* EZIoTCreateGroupVC.m */; };
+		C4A07C80271E97BA009ED005 /* EZIoTRoomMgrVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C7F271E97BA009ED005 /* EZIoTRoomMgrVC.m */; };
+		C4A07C83271E9821009ED005 /* EZIoTModifyRoomInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C82271E9821009ED005 /* EZIoTModifyRoomInfoVC.m */; };
+		C4A07C88271EB8EC009ED005 /* EZIoTFastApConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C87271EB8EC009ED005 /* EZIoTFastApConfigVC.m */; };
+		C4A07C90271FFFC1009ED005 /* EZIoTMsgCategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C8F271FFFC1009ED005 /* EZIoTMsgCategoryVC.m */; };
+		C4A07C9327200655009ED005 /* EZIoTMsgCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C9227200655009ED005 /* EZIoTMsgCategoryCell.m */; };
+		C4A07C962720FA2C009ED005 /* EZIoTMsgListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C952720FA2C009ED005 /* EZIoTMsgListVC.m */; };
+		C4A07C992720FA42009ED005 /* EZIoTMsgDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C982720FA42009ED005 /* EZIoTMsgDetailVC.m */; };
+		C4A07C9F27228728009ED005 /* EZIoTDeviceListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C9E27228728009ED005 /* EZIoTDeviceListVC.m */; };
+		C4A07CA2272287D3009ED005 /* EZIoTDeviceDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07CA1272287D3009ED005 /* EZIoTDeviceDetailVC.m */; };
+		C4A07CA527228801009ED005 /* EZIoTDeviceSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07CA427228801009ED005 /* EZIoTDeviceSettingVC.m */; };
+		C4A07CAA27228A29009ED005 /* Device.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A07CA827228A29009ED005 /* Device.storyboard */; };
+		C4A07CAD27228A53009ED005 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A07CAB27228A53009ED005 /* Message.storyboard */; };
+		C4A07CB227228A5B009ED005 /* Room.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A07CAE27228A5A009ED005 /* Room.storyboard */; };
+		C4A07CB327228A5B009ED005 /* SmartScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A07CB027228A5A009ED005 /* SmartScene.storyboard */; };
+		C4A07CB72727881F009ED005 /* EZIoTDeviceSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07CB62727881F009ED005 /* EZIoTDeviceSwitchCell.m */; };
+		C4A07CBA27278858009ED005 /* EZIoTDeviceProgressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07CB927278858009ED005 /* EZIoTDeviceProgressCell.m */; };
+		C4A07CBD27278885009ED005 /* EZIoTDeviceGenericCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07CBC27278885009ED005 /* EZIoTDeviceGenericCell.m */; };
+		C4A2E59E273116DD003BEA87 /* EZIoTDeviceListTypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A2E59D273116DC003BEA87 /* EZIoTDeviceListTypeVC.m */; };
+		C4A2E5A12731498C003BEA87 /* EZIoTMsgSwitchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A2E5A02731498C003BEA87 /* EZIoTMsgSwitchVC.m */; };
+		C4A76C98266DBE490024ABA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A76C97266DBE490024ABA8 /* AppDelegate.m */; };
+		C4A76C9B266DBE490024ABA8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A76C9A266DBE490024ABA8 /* SceneDelegate.m */; };
+		C4A76CA3266DBE4D0024ABA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A76CA2266DBE4D0024ABA8 /* Assets.xcassets */; };
+		C4A76CA9266DBE4D0024ABA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A76CA8266DBE4D0024ABA8 /* main.m */; };
+		C4C6E1982713D4F300366CF5 /* EZIoTRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C43E5B4A2703FEDC00184B30 /* EZIoTRegisterVC.m */; };
+		C4C6E1992713D4F300366CF5 /* EZIoTRegionOptionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C43E5B502703FF5B00184B30 /* EZIoTRegionOptionVC.m */; };
+		C4C6E19A2713D4F300366CF5 /* EZIoTLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A76C9D266DBE490024ABA8 /* EZIoTLoginVC.m */; };
+		C4C6E19B2713D4F300366CF5 /* EZIoTPersionalnfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C43E5B722705AB0600184B30 /* EZIoTPersionalnfoVC.m */; };
+		C4C6E19C2713D4F300366CF5 /* EZIoTResetPwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C43E5B4D2703FEF200184B30 /* EZIoTResetPwdVC.m */; };
+		C4C6E19D2713D4F300366CF5 /* EZIoTMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C43E5B562704586900184B30 /* EZIoTMineVC.m */; };
+		C4C6E1AD2713D7E200366CF5 /* Family.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C6E19F2713D7E200366CF5 /* Family.storyboard */; };
+		C4C6E1AE2713D7E200366CF5 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C6E1A12713D7E200366CF5 /* Me.storyboard */; };
+		C4C6E1AF2713D7E200366CF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C6E1A32713D7E200366CF5 /* LaunchScreen.storyboard */; };
+		C4C6E1B02713D7E200366CF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C6E1A52713D7E200366CF5 /* Main.storyboard */; };
+		C4C6E1B12713D7E200366CF5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C6E1A72713D7E200366CF5 /* Login.storyboard */; };
+		C4C6E1B22713D7E200366CF5 /* AddDevice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C6E1A92713D7E200366CF5 /* AddDevice.storyboard */; };
+		C4C6E1B32713D7E200366CF5 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C6E1AB2713D7E200366CF5 /* HomePage.storyboard */; };
+		C4C6E3212714636100366CF5 /* EZIoTLoginHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C6E3202714636100366CF5 /* EZIoTLoginHandle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C51F2642706A4AA006CBA75 /* EZIoTCreateFamilyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTCreateFamilyVC.h; sourceTree = "<group>"; };
+		0C51F2652706A4AA006CBA75 /* EZIoTCreateFamilyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTCreateFamilyVC.m; sourceTree = "<group>"; };
+		0C51F26A2706A604006CBA75 /* EZIoTFamilyListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTFamilyListVC.h; sourceTree = "<group>"; };
+		0C51F26B2706A604006CBA75 /* EZIoTFamilyListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTFamilyListVC.m; sourceTree = "<group>"; };
+		0C51F26E2706A638006CBA75 /* EZIoTFamilyDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTFamilyDetailVC.h; sourceTree = "<group>"; };
+		0C51F26F2706A638006CBA75 /* EZIoTFamilyDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTFamilyDetailVC.m; sourceTree = "<group>"; };
+		11A29DEAAC3B017FBEA87600 /* Pods-EZIoTHomeSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZIoTHomeSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-EZIoTHomeSDKDemo/Pods-EZIoTHomeSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5497D8CC7CCC70A6D8929CB9 /* Pods-EZIoTSmartSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZIoTSmartSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-EZIoTSmartSDKDemo/Pods-EZIoTSmartSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C43E5B492703FEDC00184B30 /* EZIoTRegisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTRegisterVC.h; sourceTree = "<group>"; };
+		C43E5B4A2703FEDC00184B30 /* EZIoTRegisterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTRegisterVC.m; sourceTree = "<group>"; };
+		C43E5B4C2703FEF200184B30 /* EZIoTResetPwdVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTResetPwdVC.h; sourceTree = "<group>"; };
+		C43E5B4D2703FEF200184B30 /* EZIoTResetPwdVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTResetPwdVC.m; sourceTree = "<group>"; };
+		C43E5B4F2703FF5B00184B30 /* EZIoTRegionOptionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTRegionOptionVC.h; sourceTree = "<group>"; };
+		C43E5B502703FF5B00184B30 /* EZIoTRegionOptionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTRegionOptionVC.m; sourceTree = "<group>"; };
+		C43E5B552704586900184B30 /* EZIoTMineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTMineVC.h; sourceTree = "<group>"; };
+		C43E5B562704586900184B30 /* EZIoTMineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTMineVC.m; sourceTree = "<group>"; };
+		C43E5B5E2705895600184B30 /* EZIoTHomePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTHomePageVC.h; sourceTree = "<group>"; };
+		C43E5B5F2705895600184B30 /* EZIoTHomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTHomePageVC.m; sourceTree = "<group>"; };
+		C43E5B712705AB0600184B30 /* EZIoTPersionalnfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTPersionalnfoVC.h; sourceTree = "<group>"; };
+		C43E5B722705AB0600184B30 /* EZIoTPersionalnfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTPersionalnfoVC.m; sourceTree = "<group>"; };
+		C4654649272A47A2002A14E5 /* EZIoTModifyPwdVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTModifyPwdVC.h; sourceTree = "<group>"; };
+		C465464A272A47A2002A14E5 /* EZIoTModifyPwdVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTModifyPwdVC.m; sourceTree = "<group>"; };
+		C465464C272A4F6C002A14E5 /* EZIoTModifyContactVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTModifyContactVC.h; sourceTree = "<group>"; };
+		C465464D272A4F6C002A14E5 /* EZIoTModifyContactVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTModifyContactVC.m; sourceTree = "<group>"; };
+		C48DF0772727D7E000BFE0CF /* EZIoTDeviceFeatureDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTDeviceFeatureDetailVC.h; sourceTree = "<group>"; };
+		C48DF0782727D7E000BFE0CF /* EZIoTDeviceFeatureDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTDeviceFeatureDetailVC.m; sourceTree = "<group>"; };
+		C48DF0802728273E00BFE0CF /* EZIoTAlertInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTAlertInputView.h; sourceTree = "<group>"; };
+		C48DF0812728273E00BFE0CF /* EZIoTAlertInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTAlertInputView.m; sourceTree = "<group>"; };
+		C48DF0832728275800BFE0CF /* EZIoTAlertInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EZIoTAlertInputView.xib; sourceTree = "<group>"; };
+		C48DF0852728F59600BFE0CF /* EZIoTSingleInputVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTSingleInputVC.h; sourceTree = "<group>"; };
+		C48DF0862728F59600BFE0CF /* EZIoTSingleInputVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTSingleInputVC.m; sourceTree = "<group>"; };
+		C48DF08A27294B4200BFE0CF /* EZIoTFamilyMemberInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTFamilyMemberInfoVC.h; sourceTree = "<group>"; };
+		C48DF08B27294B4200BFE0CF /* EZIoTFamilyMemberInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTFamilyMemberInfoVC.m; sourceTree = "<group>"; };
+		C4A07C78271D95C0009ED005 /* EZIoTGroupListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTGroupListVC.h; sourceTree = "<group>"; };
+		C4A07C79271D95C0009ED005 /* EZIoTGroupListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTGroupListVC.m; sourceTree = "<group>"; };
+		C4A07C7B271D985F009ED005 /* EZIoTCreateGroupVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTCreateGroupVC.h; sourceTree = "<group>"; };
+		C4A07C7C271D985F009ED005 /* EZIoTCreateGroupVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTCreateGroupVC.m; sourceTree = "<group>"; };
+		C4A07C7E271E97BA009ED005 /* EZIoTRoomMgrVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTRoomMgrVC.h; sourceTree = "<group>"; };
+		C4A07C7F271E97BA009ED005 /* EZIoTRoomMgrVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTRoomMgrVC.m; sourceTree = "<group>"; };
+		C4A07C81271E9821009ED005 /* EZIoTModifyRoomInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTModifyRoomInfoVC.h; sourceTree = "<group>"; };
+		C4A07C82271E9821009ED005 /* EZIoTModifyRoomInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTModifyRoomInfoVC.m; sourceTree = "<group>"; };
+		C4A07C86271EB8EC009ED005 /* EZIoTFastApConfigVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTFastApConfigVC.h; sourceTree = "<group>"; };
+		C4A07C87271EB8EC009ED005 /* EZIoTFastApConfigVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTFastApConfigVC.m; sourceTree = "<group>"; };
+		C4A07C8E271FFFC1009ED005 /* EZIoTMsgCategoryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTMsgCategoryVC.h; sourceTree = "<group>"; };
+		C4A07C8F271FFFC1009ED005 /* EZIoTMsgCategoryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTMsgCategoryVC.m; sourceTree = "<group>"; };
+		C4A07C9127200655009ED005 /* EZIoTMsgCategoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTMsgCategoryCell.h; sourceTree = "<group>"; };
+		C4A07C9227200655009ED005 /* EZIoTMsgCategoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTMsgCategoryCell.m; sourceTree = "<group>"; };
+		C4A07C942720FA2C009ED005 /* EZIoTMsgListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTMsgListVC.h; sourceTree = "<group>"; };
+		C4A07C952720FA2C009ED005 /* EZIoTMsgListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTMsgListVC.m; sourceTree = "<group>"; };
+		C4A07C972720FA42009ED005 /* EZIoTMsgDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTMsgDetailVC.h; sourceTree = "<group>"; };
+		C4A07C982720FA42009ED005 /* EZIoTMsgDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTMsgDetailVC.m; sourceTree = "<group>"; };
+		C4A07C9D27228728009ED005 /* EZIoTDeviceListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTDeviceListVC.h; sourceTree = "<group>"; };
+		C4A07C9E27228728009ED005 /* EZIoTDeviceListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTDeviceListVC.m; sourceTree = "<group>"; };
+		C4A07CA0272287D3009ED005 /* EZIoTDeviceDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTDeviceDetailVC.h; sourceTree = "<group>"; };
+		C4A07CA1272287D3009ED005 /* EZIoTDeviceDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTDeviceDetailVC.m; sourceTree = "<group>"; };
+		C4A07CA327228801009ED005 /* EZIoTDeviceSettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTDeviceSettingVC.h; sourceTree = "<group>"; };
+		C4A07CA427228801009ED005 /* EZIoTDeviceSettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTDeviceSettingVC.m; sourceTree = "<group>"; };
+		C4A07CA927228A29009ED005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Device.storyboard; sourceTree = "<group>"; };
+		C4A07CAC27228A53009ED005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Message.storyboard; sourceTree = "<group>"; };
+		C4A07CAF27228A5A009ED005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Room.storyboard; sourceTree = "<group>"; };
+		C4A07CB127228A5A009ED005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SmartScene.storyboard; sourceTree = "<group>"; };
+		C4A07CB52727881F009ED005 /* EZIoTDeviceSwitchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTDeviceSwitchCell.h; sourceTree = "<group>"; };
+		C4A07CB62727881F009ED005 /* EZIoTDeviceSwitchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTDeviceSwitchCell.m; sourceTree = "<group>"; };
+		C4A07CB827278858009ED005 /* EZIoTDeviceProgressCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTDeviceProgressCell.h; sourceTree = "<group>"; };
+		C4A07CB927278858009ED005 /* EZIoTDeviceProgressCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTDeviceProgressCell.m; sourceTree = "<group>"; };
+		C4A07CBB27278885009ED005 /* EZIoTDeviceGenericCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTDeviceGenericCell.h; sourceTree = "<group>"; };
+		C4A07CBC27278885009ED005 /* EZIoTDeviceGenericCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTDeviceGenericCell.m; sourceTree = "<group>"; };
+		C4A2E59C273116DC003BEA87 /* EZIoTDeviceListTypeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTDeviceListTypeVC.h; sourceTree = "<group>"; };
+		C4A2E59D273116DC003BEA87 /* EZIoTDeviceListTypeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTDeviceListTypeVC.m; sourceTree = "<group>"; };
+		C4A2E59F2731498C003BEA87 /* EZIoTMsgSwitchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTMsgSwitchVC.h; sourceTree = "<group>"; };
+		C4A2E5A02731498C003BEA87 /* EZIoTMsgSwitchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTMsgSwitchVC.m; sourceTree = "<group>"; };
+		C4A76C93266DBE490024ABA8 /* EZIoTHomeSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZIoTHomeSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A76C96266DBE490024ABA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C4A76C97266DBE490024ABA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C4A76C99266DBE490024ABA8 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		C4A76C9A266DBE490024ABA8 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		C4A76C9C266DBE490024ABA8 /* EZIoTLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTLoginVC.h; sourceTree = "<group>"; };
+		C4A76C9D266DBE490024ABA8 /* EZIoTLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTLoginVC.m; sourceTree = "<group>"; };
+		C4A76CA2266DBE4D0024ABA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4A76CA7266DBE4D0024ABA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A76CA8266DBE4D0024ABA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4C6E1912713C56900366CF5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C4C6E1932713C57300366CF5 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		C4C6E1A02713D7E200366CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Family.storyboard; sourceTree = "<group>"; };
+		C4C6E1A22713D7E200366CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Me.storyboard; sourceTree = "<group>"; };
+		C4C6E1A42713D7E200366CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4C6E1A62713D7E200366CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4C6E1A82713D7E200366CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		C4C6E1AA2713D7E200366CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddDevice.storyboard; sourceTree = "<group>"; };
+		C4C6E1AC2713D7E200366CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomePage.storyboard; sourceTree = "<group>"; };
+		C4C6E31F2714636100366CF5 /* EZIoTLoginHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTLoginHandle.h; sourceTree = "<group>"; };
+		C4C6E3202714636100366CF5 /* EZIoTLoginHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTLoginHandle.m; sourceTree = "<group>"; };
+		D277D86CCC5058D0592B71AC /* Pods-EZIoTHomeSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZIoTHomeSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-EZIoTHomeSDKDemo/Pods-EZIoTHomeSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F809EB549510331671F8079E /* libPods-EZIoTHomeSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EZIoTHomeSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE2C12E830CF6D6531BA1F97 /* Pods-EZIoTSmartSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZIoTSmartSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-EZIoTSmartSDKDemo/Pods-EZIoTSmartSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4A76C90266DBE490024ABA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				668CF7513844CB5706F613D7 /* libPods-EZIoTHomeSDKDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C51F2632706A478006CBA75 /* Family */ = {
+			isa = PBXGroup;
+			children = (
+				0C51F26A2706A604006CBA75 /* EZIoTFamilyListVC.h */,
+				0C51F26B2706A604006CBA75 /* EZIoTFamilyListVC.m */,
+				0C51F26E2706A638006CBA75 /* EZIoTFamilyDetailVC.h */,
+				0C51F26F2706A638006CBA75 /* EZIoTFamilyDetailVC.m */,
+				C48DF08A27294B4200BFE0CF /* EZIoTFamilyMemberInfoVC.h */,
+				C48DF08B27294B4200BFE0CF /* EZIoTFamilyMemberInfoVC.m */,
+				C48DF0852728F59600BFE0CF /* EZIoTSingleInputVC.h */,
+				C48DF0862728F59600BFE0CF /* EZIoTSingleInputVC.m */,
+				0C51F2642706A4AA006CBA75 /* EZIoTCreateFamilyVC.h */,
+				0C51F2652706A4AA006CBA75 /* EZIoTCreateFamilyVC.m */,
+			);
+			path = Family;
+			sourceTree = "<group>";
+		};
+		0C51F2762706AACD006CBA75 /* AddDevice */ = {
+			isa = PBXGroup;
+			children = (
+				C4A07C86271EB8EC009ED005 /* EZIoTFastApConfigVC.h */,
+				C4A07C87271EB8EC009ED005 /* EZIoTFastApConfigVC.m */,
+			);
+			path = AddDevice;
+			sourceTree = "<group>";
+		};
+		22265927FD74907174475CD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE2C12E830CF6D6531BA1F97 /* Pods-EZIoTSmartSDKDemo.debug.xcconfig */,
+				5497D8CC7CCC70A6D8929CB9 /* Pods-EZIoTSmartSDKDemo.release.xcconfig */,
+				11A29DEAAC3B017FBEA87600 /* Pods-EZIoTHomeSDKDemo.debug.xcconfig */,
+				D277D86CCC5058D0592B71AC /* Pods-EZIoTHomeSDKDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5C9FD84496788B0A027CA6AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4C6E1932713C57300366CF5 /* libresolv.9.tbd */,
+				C4C6E1912713C56900366CF5 /* libc++.tbd */,
+				F809EB549510331671F8079E /* libPods-EZIoTHomeSDKDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C43E5B462703FE7400184B30 /* Busi */ = {
+			isa = PBXGroup;
+			children = (
+				C43E5B5C270588F700184B30 /* HamePage */,
+				0C51F2762706AACD006CBA75 /* AddDevice */,
+				C4A07C9C27228705009ED005 /* Device */,
+				0C51F2632706A478006CBA75 /* Family */,
+				C4A07C77271D9598009ED005 /* Group */,
+				C4A07C8D271FFF8D009ED005 /* Message */,
+				C43E5B472703FE8500184B30 /* Login */,
+				C43E5B482703FEB800184B30 /* Mine */,
+			);
+			path = Busi;
+			sourceTree = "<group>";
+		};
+		C43E5B472703FE8500184B30 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C4C6E31E2714634100366CF5 /* Manager */,
+				C4A76C9C266DBE490024ABA8 /* EZIoTLoginVC.h */,
+				C4A76C9D266DBE490024ABA8 /* EZIoTLoginVC.m */,
+				C43E5B492703FEDC00184B30 /* EZIoTRegisterVC.h */,
+				C43E5B4A2703FEDC00184B30 /* EZIoTRegisterVC.m */,
+				C43E5B4C2703FEF200184B30 /* EZIoTResetPwdVC.h */,
+				C43E5B4D2703FEF200184B30 /* EZIoTResetPwdVC.m */,
+				C43E5B4F2703FF5B00184B30 /* EZIoTRegionOptionVC.h */,
+				C43E5B502703FF5B00184B30 /* EZIoTRegionOptionVC.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C43E5B482703FEB800184B30 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				C43E5B552704586900184B30 /* EZIoTMineVC.h */,
+				C43E5B562704586900184B30 /* EZIoTMineVC.m */,
+				C43E5B712705AB0600184B30 /* EZIoTPersionalnfoVC.h */,
+				C43E5B722705AB0600184B30 /* EZIoTPersionalnfoVC.m */,
+				C465464C272A4F6C002A14E5 /* EZIoTModifyContactVC.h */,
+				C465464D272A4F6C002A14E5 /* EZIoTModifyContactVC.m */,
+				C4654649272A47A2002A14E5 /* EZIoTModifyPwdVC.h */,
+				C465464A272A47A2002A14E5 /* EZIoTModifyPwdVC.m */,
+				C4A2E59F2731498C003BEA87 /* EZIoTMsgSwitchVC.h */,
+				C4A2E5A02731498C003BEA87 /* EZIoTMsgSwitchVC.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		C43E5B5C270588F700184B30 /* HamePage */ = {
+			isa = PBXGroup;
+			children = (
+				C43E5B5E2705895600184B30 /* EZIoTHomePageVC.h */,
+				C43E5B5F2705895600184B30 /* EZIoTHomePageVC.m */,
+			);
+			path = HamePage;
+			sourceTree = "<group>";
+		};
+		C4A07C77271D9598009ED005 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				C4A07C78271D95C0009ED005 /* EZIoTGroupListVC.h */,
+				C4A07C79271D95C0009ED005 /* EZIoTGroupListVC.m */,
+				C4A07C7B271D985F009ED005 /* EZIoTCreateGroupVC.h */,
+				C4A07C7C271D985F009ED005 /* EZIoTCreateGroupVC.m */,
+				C4A07C7E271E97BA009ED005 /* EZIoTRoomMgrVC.h */,
+				C4A07C7F271E97BA009ED005 /* EZIoTRoomMgrVC.m */,
+				C4A07C81271E9821009ED005 /* EZIoTModifyRoomInfoVC.h */,
+				C4A07C82271E9821009ED005 /* EZIoTModifyRoomInfoVC.m */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		C4A07C8D271FFF8D009ED005 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				C4A07C9127200655009ED005 /* EZIoTMsgCategoryCell.h */,
+				C4A07C9227200655009ED005 /* EZIoTMsgCategoryCell.m */,
+				C4A07C8E271FFFC1009ED005 /* EZIoTMsgCategoryVC.h */,
+				C4A07C8F271FFFC1009ED005 /* EZIoTMsgCategoryVC.m */,
+				C4A07C942720FA2C009ED005 /* EZIoTMsgListVC.h */,
+				C4A07C952720FA2C009ED005 /* EZIoTMsgListVC.m */,
+				C4A07C972720FA42009ED005 /* EZIoTMsgDetailVC.h */,
+				C4A07C982720FA42009ED005 /* EZIoTMsgDetailVC.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		C4A07C9C27228705009ED005 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				C4A07CB4272787D4009ED005 /* Cell */,
+				C4A2E59C273116DC003BEA87 /* EZIoTDeviceListTypeVC.h */,
+				C4A2E59D273116DC003BEA87 /* EZIoTDeviceListTypeVC.m */,
+				C4A07C9D27228728009ED005 /* EZIoTDeviceListVC.h */,
+				C4A07C9E27228728009ED005 /* EZIoTDeviceListVC.m */,
+				C4A07CA0272287D3009ED005 /* EZIoTDeviceDetailVC.h */,
+				C4A07CA1272287D3009ED005 /* EZIoTDeviceDetailVC.m */,
+				C48DF0772727D7E000BFE0CF /* EZIoTDeviceFeatureDetailVC.h */,
+				C48DF0782727D7E000BFE0CF /* EZIoTDeviceFeatureDetailVC.m */,
+				C4A07CA327228801009ED005 /* EZIoTDeviceSettingVC.h */,
+				C4A07CA427228801009ED005 /* EZIoTDeviceSettingVC.m */,
+				C48DF0802728273E00BFE0CF /* EZIoTAlertInputView.h */,
+				C48DF0812728273E00BFE0CF /* EZIoTAlertInputView.m */,
+				C48DF0832728275800BFE0CF /* EZIoTAlertInputView.xib */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		C4A07CB4272787D4009ED005 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C4A07CB52727881F009ED005 /* EZIoTDeviceSwitchCell.h */,
+				C4A07CB62727881F009ED005 /* EZIoTDeviceSwitchCell.m */,
+				C4A07CB827278858009ED005 /* EZIoTDeviceProgressCell.h */,
+				C4A07CB927278858009ED005 /* EZIoTDeviceProgressCell.m */,
+				C4A07CBB27278885009ED005 /* EZIoTDeviceGenericCell.h */,
+				C4A07CBC27278885009ED005 /* EZIoTDeviceGenericCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C4A76C8A266DBE490024ABA8 = {
+			isa = PBXGroup;
+			children = (
+				C4A76C95266DBE490024ABA8 /* EZIoTHomeSDKDemo */,
+				C4A76C94266DBE490024ABA8 /* Products */,
+				5C9FD84496788B0A027CA6AA /* Frameworks */,
+				22265927FD74907174475CD4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C4A76C94266DBE490024ABA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4A76C93266DBE490024ABA8 /* EZIoTHomeSDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4A76C95266DBE490024ABA8 /* EZIoTHomeSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C4C6E19E2713D7E200366CF5 /* Storyboard */,
+				C43E5B462703FE7400184B30 /* Busi */,
+				C4A76C96266DBE490024ABA8 /* AppDelegate.h */,
+				C4A76C97266DBE490024ABA8 /* AppDelegate.m */,
+				C4A76C99266DBE490024ABA8 /* SceneDelegate.h */,
+				C4A76C9A266DBE490024ABA8 /* SceneDelegate.m */,
+				C4A76CA2266DBE4D0024ABA8 /* Assets.xcassets */,
+				C4A76CA7266DBE4D0024ABA8 /* Info.plist */,
+				C4A76CA8266DBE4D0024ABA8 /* main.m */,
+			);
+			path = EZIoTHomeSDKDemo;
+			sourceTree = "<group>";
+		};
+		C4C6E19E2713D7E200366CF5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C4C6E1A52713D7E200366CF5 /* Main.storyboard */,
+				C4A07CA827228A29009ED005 /* Device.storyboard */,
+				C4A07CAB27228A53009ED005 /* Message.storyboard */,
+				C4C6E1A72713D7E200366CF5 /* Login.storyboard */,
+				C4C6E1AB2713D7E200366CF5 /* HomePage.storyboard */,
+				C4C6E19F2713D7E200366CF5 /* Family.storyboard */,
+				C4C6E1A92713D7E200366CF5 /* AddDevice.storyboard */,
+				C4C6E1A12713D7E200366CF5 /* Me.storyboard */,
+				C4A07CAE27228A5A009ED005 /* Room.storyboard */,
+				C4A07CB027228A5A009ED005 /* SmartScene.storyboard */,
+				C4C6E1A32713D7E200366CF5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		C4C6E31E2714634100366CF5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C4C6E31F2714636100366CF5 /* EZIoTLoginHandle.h */,
+				C4C6E3202714636100366CF5 /* EZIoTLoginHandle.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4A76C92266DBE490024ABA8 /* EZIoTHomeSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A76CAC266DBE4D0024ABA8 /* Build configuration list for PBXNativeTarget "EZIoTHomeSDKDemo" */;
+			buildPhases = (
+				06B3F0B854545935FFBC1293 /* [CP] Check Pods Manifest.lock */,
+				C4A76C8F266DBE490024ABA8 /* Sources */,
+				C4A76C90266DBE490024ABA8 /* Frameworks */,
+				C4A76C91266DBE490024ABA8 /* Resources */,
+				B93136F1DA24DD9ADE52F065 /* [CP] Embed Pods Frameworks */,
+				31DA62A7DD36988E2A0774AA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EZIoTHomeSDKDemo;
+			productName = EZIoTSmartSDKDemo;
+			productReference = C4A76C93266DBE490024ABA8 /* EZIoTHomeSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4A76C8B266DBE490024ABA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					C4A76C92266DBE490024ABA8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = C4A76C8E266DBE490024ABA8 /* Build configuration list for PBXProject "EZIoTHomeSDKDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4A76C8A266DBE490024ABA8;
+			productRefGroup = C4A76C94266DBE490024ABA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4A76C92266DBE490024ABA8 /* EZIoTHomeSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4A76C91266DBE490024ABA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A76CA3266DBE4D0024ABA8 /* Assets.xcassets in Resources */,
+				C4C6E1B12713D7E200366CF5 /* Login.storyboard in Resources */,
+				C4A07CAD27228A53009ED005 /* Message.storyboard in Resources */,
+				C4C6E1AE2713D7E200366CF5 /* Me.storyboard in Resources */,
+				C4A07CB227228A5B009ED005 /* Room.storyboard in Resources */,
+				C48DF0842728275800BFE0CF /* EZIoTAlertInputView.xib in Resources */,
+				C4C6E1B22713D7E200366CF5 /* AddDevice.storyboard in Resources */,
+				C4C6E1B02713D7E200366CF5 /* Main.storyboard in Resources */,
+				C4C6E1AF2713D7E200366CF5 /* LaunchScreen.storyboard in Resources */,
+				C4A07CAA27228A29009ED005 /* Device.storyboard in Resources */,
+				C4A07CB327228A5B009ED005 /* SmartScene.storyboard in Resources */,
+				C4C6E1AD2713D7E200366CF5 /* Family.storyboard in Resources */,
+				C4C6E1B32713D7E200366CF5 /* HomePage.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06B3F0B854545935FFBC1293 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EZIoTHomeSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31DA62A7DD36988E2A0774AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EZIoTHomeSDKDemo/Pods-EZIoTHomeSDKDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EZIoTHomeSDKDemo/Pods-EZIoTHomeSDKDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EZIoTHomeSDKDemo/Pods-EZIoTHomeSDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B93136F1DA24DD9ADE52F065 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EZIoTHomeSDKDemo/Pods-EZIoTHomeSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EZIoTHomeSDKDemo/Pods-EZIoTHomeSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EZIoTHomeSDKDemo/Pods-EZIoTHomeSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4A76C8F266DBE490024ABA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A07C9327200655009ED005 /* EZIoTMsgCategoryCell.m in Sources */,
+				C4A07C90271FFFC1009ED005 /* EZIoTMsgCategoryVC.m in Sources */,
+				C4A07CB72727881F009ED005 /* EZIoTDeviceSwitchCell.m in Sources */,
+				C4A76C98266DBE490024ABA8 /* AppDelegate.m in Sources */,
+				C4A07CBD27278885009ED005 /* EZIoTDeviceGenericCell.m in Sources */,
+				C4A07CBA27278858009ED005 /* EZIoTDeviceProgressCell.m in Sources */,
+				C4C6E1992713D4F300366CF5 /* EZIoTRegionOptionVC.m in Sources */,
+				C4A76CA9266DBE4D0024ABA8 /* main.m in Sources */,
+				C4A2E5A12731498C003BEA87 /* EZIoTMsgSwitchVC.m in Sources */,
+				C4C6E3212714636100366CF5 /* EZIoTLoginHandle.m in Sources */,
+				C4A07C7D271D985F009ED005 /* EZIoTCreateGroupVC.m in Sources */,
+				C465464E272A4F6C002A14E5 /* EZIoTModifyContactVC.m in Sources */,
+				C48DF08C27294B4200BFE0CF /* EZIoTFamilyMemberInfoVC.m in Sources */,
+				0C51F26C2706A604006CBA75 /* EZIoTFamilyListVC.m in Sources */,
+				C4A07C962720FA2C009ED005 /* EZIoTMsgListVC.m in Sources */,
+				C4A07CA2272287D3009ED005 /* EZIoTDeviceDetailVC.m in Sources */,
+				C4C6E19D2713D4F300366CF5 /* EZIoTMineVC.m in Sources */,
+				C4A07C83271E9821009ED005 /* EZIoTModifyRoomInfoVC.m in Sources */,
+				C4A07C80271E97BA009ED005 /* EZIoTRoomMgrVC.m in Sources */,
+				C43E5B602705895600184B30 /* EZIoTHomePageVC.m in Sources */,
+				C4A07C992720FA42009ED005 /* EZIoTMsgDetailVC.m in Sources */,
+				0C51F2662706A4AA006CBA75 /* EZIoTCreateFamilyVC.m in Sources */,
+				C4C6E19A2713D4F300366CF5 /* EZIoTLoginVC.m in Sources */,
+				C4C6E1982713D4F300366CF5 /* EZIoTRegisterVC.m in Sources */,
+				0C51F2702706A638006CBA75 /* EZIoTFamilyDetailVC.m in Sources */,
+				C4A07C7A271D95C0009ED005 /* EZIoTGroupListVC.m in Sources */,
+				C465464B272A47A2002A14E5 /* EZIoTModifyPwdVC.m in Sources */,
+				C4A76C9B266DBE490024ABA8 /* SceneDelegate.m in Sources */,
+				C48DF0792727D7E000BFE0CF /* EZIoTDeviceFeatureDetailVC.m in Sources */,
+				C4A2E59E273116DD003BEA87 /* EZIoTDeviceListTypeVC.m in Sources */,
+				C4C6E19C2713D4F300366CF5 /* EZIoTResetPwdVC.m in Sources */,
+				C4A07C88271EB8EC009ED005 /* EZIoTFastApConfigVC.m in Sources */,
+				C48DF0872728F59600BFE0CF /* EZIoTSingleInputVC.m in Sources */,
+				C4A07CA527228801009ED005 /* EZIoTDeviceSettingVC.m in Sources */,
+				C4A07C9F27228728009ED005 /* EZIoTDeviceListVC.m in Sources */,
+				C48DF0822728273E00BFE0CF /* EZIoTAlertInputView.m in Sources */,
+				C4C6E19B2713D4F300366CF5 /* EZIoTPersionalnfoVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4A07CA827228A29009ED005 /* Device.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4A07CA927228A29009ED005 /* Base */,
+			);
+			name = Device.storyboard;
+			sourceTree = "<group>";
+		};
+		C4A07CAB27228A53009ED005 /* Message.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4A07CAC27228A53009ED005 /* Base */,
+			);
+			name = Message.storyboard;
+			sourceTree = "<group>";
+		};
+		C4A07CAE27228A5A009ED005 /* Room.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4A07CAF27228A5A009ED005 /* Base */,
+			);
+			name = Room.storyboard;
+			sourceTree = "<group>";
+		};
+		C4A07CB027228A5A009ED005 /* SmartScene.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4A07CB127228A5A009ED005 /* Base */,
+			);
+			name = SmartScene.storyboard;
+			sourceTree = "<group>";
+		};
+		C4C6E19F2713D7E200366CF5 /* Family.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C6E1A02713D7E200366CF5 /* Base */,
+			);
+			name = Family.storyboard;
+			sourceTree = "<group>";
+		};
+		C4C6E1A12713D7E200366CF5 /* Me.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C6E1A22713D7E200366CF5 /* Base */,
+			);
+			name = Me.storyboard;
+			sourceTree = "<group>";
+		};
+		C4C6E1A32713D7E200366CF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C6E1A42713D7E200366CF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C4C6E1A52713D7E200366CF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C6E1A62713D7E200366CF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4C6E1A72713D7E200366CF5 /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C6E1A82713D7E200366CF5 /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+		C4C6E1A92713D7E200366CF5 /* AddDevice.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C6E1AA2713D7E200366CF5 /* Base */,
+			);
+			name = AddDevice.storyboard;
+			sourceTree = "<group>";
+		};
+		C4C6E1AB2713D7E200366CF5 /* HomePage.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C6E1AC2713D7E200366CF5 /* Base */,
+			);
+			name = HomePage.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4A76CAA266DBE4D0024ABA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C4A76CAB266DBE4D0024ABA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4A76CAD266DBE4D0024ABA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11A29DEAAC3B017FBEA87600 /* Pods-EZIoTHomeSDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 211122;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/EZIoTHomeSDKDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezviz.HomeSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C4A76CAE266DBE4D0024ABA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D277D86CCC5058D0592B71AC /* Pods-EZIoTHomeSDKDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 211122;
+				DEVELOPMENT_TEAM = SRN4RNBX5L;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/EZIoTHomeSDKDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezviz.smartLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = OEMTest;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4A76C8E266DBE490024ABA8 /* Build configuration list for PBXProject "EZIoTHomeSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A76CAA266DBE4D0024ABA8 /* Debug */,
+				C4A76CAB266DBE4D0024ABA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4A76CAC266DBE4D0024ABA8 /* Build configuration list for PBXNativeTarget "EZIoTHomeSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A76CAD266DBE4D0024ABA8 /* Debug */,
+				C4A76CAE266DBE4D0024ABA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4A76C8B266DBE490024ABA8 /* Project object */;
+}
