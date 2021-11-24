@@ -1,5 +1,5 @@
 ## SDK Demo
-SDK Demo 演示了萤石 App SDK 的接入流程以及 SDK 开放的功能，因此通过参考 Demo 可以基本解决再接入过程中碰到的问题。Demo下载地址：[点击下载](https://github.com/Ezviz-OpenBiz/EZIoT-HomeSDK-iOS-Demo)
+SDK Demo 演示了萤石 App SDK 的接入流程以及 SDK 开放的功能，因此通过参考 Demo 可以基本解决再接入过程中碰到的问题。
 
 ### Demo 模块介绍：
 
