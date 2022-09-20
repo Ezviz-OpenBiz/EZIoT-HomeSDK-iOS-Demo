@@ -59,6 +59,7 @@ static NSString *reuseIdentifier = @"EZIoTMsgListCell";
             weakSelf.msgsList = [NSMutableArray arrayWithArray:resp.msgInfos];
             [weakSelf.tableView.mj_header endRefreshing];
             [weakSelf.tableView.mj_footer resetNoMoreData];
+            weakSelf.tableView.mj_header.hidden = YES;
             if (!resp || resp.msgInfos.count == 0) {
                 [weakSelf.tableView.mj_footer endRefreshingWithNoMoreData];
                 return;
@@ -134,6 +135,14 @@ static NSString *reuseIdentifier = @"EZIoTMsgListCell";
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self performSegueWithIdentifier: @"ShowMsgDetail" sender:self.msgsList[indexPath.row]];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+    CGPoint point=scrollView.contentOffset;
+    if (point.y < -150) {
+        self.tableView.mj_header.hidden = NO;
+    }
 }
 
 @end

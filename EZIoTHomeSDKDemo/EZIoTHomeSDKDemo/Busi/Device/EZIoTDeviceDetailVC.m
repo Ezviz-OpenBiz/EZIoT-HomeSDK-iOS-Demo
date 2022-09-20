@@ -61,8 +61,9 @@
     EZIoTFeatureItem *featureItem = self.featuresList[indexPath.row];
     NSString *reusedId = [self cellReusedIdentifier:featureItem];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reusedId forIndexPath:indexPath];
+    EZIoTResourceInfo *resourceInfo = [EZIoTResourceInfo getResourcesByDeviceSerial:self.deviceInfo.deviceSerial].firstObject;
     
-    if (self.deviceInfo.status != 1 || self.deviceInfo.resourceInfos.firstObject.isShared != 0) {
+    if (self.deviceInfo.status != 1 || resourceInfo.isShared != 0) {
         cell.contentView.userInteractionEnabled = NO;
         cell.contentView.alpha = 0.6;
     }

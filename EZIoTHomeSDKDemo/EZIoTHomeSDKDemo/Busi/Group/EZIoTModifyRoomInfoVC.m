@@ -33,7 +33,7 @@
     
     __weak typeof(self) weakSelf = self;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [EZIoTGroupManager modifyGroupNameWithFamilyId:[EZIoTUserInfo getInstance].curFamilyId groupId:[EZIoTUserInfo getInstance].curGroupId groupName:self.roomNameInput.text success:^{
+    [EZIoTRoomManager modifyRoomNameWithFamilyId:[EZIoTUserInfo getInstance].curFamilyId roomId:[EZIoTUserInfo getInstance].curGroupId roomName:self.roomNameInput.text success:^{
         
         [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
         [weakSelf.view makeToast:@"修改成功"  duration:3.0 position:CSToastPositionCenter];

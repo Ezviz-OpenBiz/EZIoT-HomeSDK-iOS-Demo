@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oQh-0I-cwS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oQh-0I-cwS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +19,7 @@
                             <tableViewSection headerTitle="家庭管理" id="uEo-Zq-1zU">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="m6J-IG-brM" detailTextLabel="Nw6-8F-wRz" style="IBUITableViewCellStyleValue1" id="SUF-MP-bG3">
-                                        <rect key="frame" x="20" y="49.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="32" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SUF-MP-bG3" id="M1K-JG-Fs9">
                                             <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
@@ -43,7 +43,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Pis-vr-bu5" style="IBUITableViewCellStyleDefault" id="GvG-kZ-oH6">
-                                        <rect key="frame" x="20" y="93" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="75.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GvG-kZ-oH6" id="NlU-tm-pfd">
                                             <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
@@ -63,7 +63,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Uu3-Wk-bvR" style="IBUITableViewCellStyleDefault" id="wvl-hX-ppu">
-                                        <rect key="frame" x="20" y="136.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="119" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wvl-hX-ppu" id="sO5-Cc-uqY">
                                             <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
@@ -87,7 +87,7 @@
                             <tableViewSection headerTitle="房间管理" id="ztd-Ck-ne8">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="JLG-cE-7xW" detailTextLabel="eCi-lq-KPe" style="IBUITableViewCellStyleValue1" id="f1f-ex-wwd">
-                                        <rect key="frame" x="20" y="230" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="212.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f1f-ex-wwd" id="fYA-zX-PZa">
                                             <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
@@ -111,7 +111,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="AeS-at-e5c" style="IBUITableViewCellStyleDefault" id="z43-QB-UjL">
-                                        <rect key="frame" x="20" y="273.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="256" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z43-QB-UjL" id="e8K-jl-vQV">
                                             <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
@@ -128,7 +128,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Gh8-NT-DhY" style="IBUITableViewCellStyleDefault" id="HUE-KW-XOH">
-                                        <rect key="frame" x="20" y="317" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="299.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HUE-KW-XOH" id="X4l-Kg-QR0">
                                             <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
@@ -149,7 +149,7 @@
                             <tableViewSection headerTitle="设备管理" id="gXu-hl-fyF">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="eLP-Ec-hVs" style="IBUITableViewCellStyleDefault" id="q3O-xn-cNK">
-                                        <rect key="frame" x="20" y="410.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="393" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q3O-xn-cNK" id="3cC-11-su5">
                                             <rect key="frame" x="0.0" y="0.0" width="344.5" height="43.5"/>
@@ -265,20 +265,20 @@
             </objects>
             <point key="canvasLocation" x="2134" y="-1329"/>
         </scene>
-        <!--EZIoTGroupListVC-->
+        <!--EZIoTRoomListVC-->
         <scene sceneID="gTO-IW-c1G">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="EZIoTGroupListVC" storyboardName="Room" referencedIdentifier="EZIoTGroupListVC" id="31g-wf-sWk" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="EZIoTRoomListVC" storyboardName="Room" referencedIdentifier="EZIoTRoomListVC" id="31g-wf-sWk" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="cfP-Rj-Qpx"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyB-Jk-aAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2134" y="-1416"/>
         </scene>
-        <!--EZIoTCreateGroupVC-->
+        <!--EZIoTCreateRoomVC-->
         <scene sceneID="DH4-2K-IJ9">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="EZIoTCreateGroupVC" storyboardName="Room" referencedIdentifier="EZIoTCreateGroupVC" id="6pu-o8-bzx" userLabel="EZIoTCreateGroupVC" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="EZIoTCreateRoomVC" storyboardName="Room" referencedIdentifier="EZIoTCreateRoomVC" id="6pu-o8-bzx" userLabel="EZIoTCreateRoomVC" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="2fI-ou-3ln"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zn8-tE-qVI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -11,7 +11,8 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <Toast/Toast.h>
 #import "EZIoTLoginHandle.h"
-
+//#import <EZIoTIPCSDK/EZIoTIPCGlobalSetting.h>
+#import "EZIoTIPCGlobalSetting.h"
 
 @interface EZIoTLoginVC ()
 
@@ -34,6 +35,14 @@
 
     NSString *areaLabel = [NSString stringWithFormat:@"%@+%@", [EZIoTUserInfo getInstance].areaInfo.name, [EZIoTUserInfo getInstance].areaInfo.phoneCode];
     [self.areaBtn setTitle:[EZIoTUserInfo getInstance].areaInfo.name ? areaLabel : @"选择区域" forState:UIControlStateNormal];
+    
+//    self.accountTextfield.text = @"18100193721";
+    self.accountTextfield.text = @"15727062657";
+//    self.accountTextfield.text = @"15968864631";
+    self.pwdTextfield.text = @"test123+";
+//    self.pwdTextfield.text = @"TEST123+";
+//    self.accountTextfield.text = @"18969186623";
+//    self.pwdTextfield.text = @"Qwer1234";
 }
 
 - (void) fetchData {
@@ -76,6 +85,8 @@
             
             [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
             [weakSelf.view makeToast:error.localizedFailureReason.length>0 ? error.localizedFailureReason : @"网络异常"  duration:3.0 position:CSToastPositionCenter];
+            
+            [EZIoTIPCGlobalSetting registerOnLoginFailed];
         }];
     }
 }

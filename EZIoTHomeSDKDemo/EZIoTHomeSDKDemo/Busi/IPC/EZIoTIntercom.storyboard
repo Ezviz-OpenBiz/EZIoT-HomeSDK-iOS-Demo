@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--IoT Voice IntercomVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="EZIoTVoiceIntercomVC" id="Y6W-OH-hqX" customClass="EZIoTVoiceIntercomVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_datu" translatesAutoresizingMaskIntoConstraints="NO" id="Cv6-JW-WYk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIU-f9-Rmb">
+                                <rect key="frame" x="282" y="661" width="94" height="110"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" image="iconu_yangshengqi_close" imagePlacement="top" imagePadding="12">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="扬声器已关">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickSpeakerBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mpN-2w-zZ2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单目AI台灯呼叫" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tf-fF-AUs">
+                                <rect key="frame" x="109" y="136" width="196" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d48-wg-OYr">
+                                <rect key="frame" x="200.5" y="175" width="13" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4o-Ch-Pg3">
+                                <rect key="frame" x="38" y="661" width="94" height="110"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" image="icon_maikefeng_close" imagePlacement="top" imagePadding="12">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="麦克风已关">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickMicBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6hI-dn-ebe"/>
+                                    <action selector="micControlBtn:" destination="Yoc-NE-91g" eventType="touchUpInside" id="3bL-3x-f35"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWd-gV-Fwd">
+                                <rect key="frame" x="266" y="661" width="88" height="110"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_jieitng" imagePlacement="top" imagePadding="12">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="接听">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickAnswerBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="u24-jp-afR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOi-74-ltq">
+                                <rect key="frame" x="60" y="661" width="88" height="110"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_guaduan" imagePlacement="top" imagePadding="12">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="挂断">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickHangupBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="b4c-kc-03w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Cv6-JW-WYk" secondAttribute="trailing" id="1bU-5U-6Yd"/>
+                            <constraint firstAttribute="bottom" secondItem="Cv6-JW-WYk" secondAttribute="bottom" id="6Pz-kd-wcJ"/>
+                            <constraint firstItem="2tf-fF-AUs" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="6h6-3V-PyZ"/>
+                            <constraint firstItem="d4o-Ch-Pg3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="38" id="AAk-i6-jR6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dWd-gV-Fwd" secondAttribute="trailing" constant="60" id="AaB-NQ-wwH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cIU-f9-Rmb" secondAttribute="trailing" constant="38" id="H3g-OR-AJI"/>
+                            <constraint firstItem="d48-wg-OYr" firstAttribute="top" secondItem="2tf-fF-AUs" secondAttribute="bottom" constant="5" id="NdR-u8-pOc"/>
+                            <constraint firstAttribute="bottom" secondItem="dWd-gV-Fwd" secondAttribute="bottom" constant="125" id="OgI-aG-Rdy"/>
+                            <constraint firstItem="Cv6-JW-WYk" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="Q3C-fb-36G"/>
+                            <constraint firstItem="KOi-74-ltq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="60" id="Qda-e4-QdV"/>
+                            <constraint firstItem="Cv6-JW-WYk" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Rtk-gE-j5g"/>
+                            <constraint firstAttribute="bottom" secondItem="cIU-f9-Rmb" secondAttribute="bottom" constant="125" id="gYh-Oz-mHx"/>
+                            <constraint firstItem="2tf-fF-AUs" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="136" id="mTr-hG-OHs"/>
+                            <constraint firstItem="d48-wg-OYr" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="q5e-68-jmj"/>
+                            <constraint firstAttribute="bottom" secondItem="d4o-Ch-Pg3" secondAttribute="bottom" constant="125" id="qfe-3o-y68"/>
+                            <constraint firstAttribute="bottom" secondItem="KOi-74-ltq" secondAttribute="bottom" constant="125" id="tJO-ac-TFC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerBtn" destination="dWd-gV-Fwd" id="oJc-BN-4Xd"/>
+                        <outlet property="hangupBtn" destination="KOi-74-ltq" id="S5e-Np-44P"/>
+                        <outlet property="micControlBtn" destination="d4o-Ch-Pg3" id="Tre-C0-CSS"/>
+                        <outlet property="speakerBtn" destination="cIU-f9-Rmb" id="QSG-O5-Hni"/>
+                        <outlet property="subTitleLabel" destination="d48-wg-OYr" id="FiD-tO-oQG"/>
+                        <outlet property="titleLabel" destination="2tf-fF-AUs" id="TWV-q2-tBj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Yoc-NE-91g" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="104.46428571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_guaduan" width="64" height="64"/>
+        <image name="ic_jieitng" width="64" height="64"/>
+        <image name="icon_maikefeng_close" width="64" height="64"/>
+        <image name="iconu_yangshengqi_close" width="64" height="64"/>
+        <image name="img_datu" width="375" height="812"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

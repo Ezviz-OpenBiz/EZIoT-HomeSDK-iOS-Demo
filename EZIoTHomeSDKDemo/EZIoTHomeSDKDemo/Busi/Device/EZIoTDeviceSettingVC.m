@@ -10,7 +10,9 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <Toast/Toast.h>
 #import "EZIoTSingleInputVC.h"
-
+#import "EZIoTVideoPlayerVC.h"
+#import "EZIoTRecordListVC.h"
+//#import <EZIoTRouter/EZIoTPageResolver.h>
 
 @interface EZIoTDeviceSettingVC ()
 
@@ -27,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *maskLabel;
 @property (weak, nonatomic) IBOutlet UIButton *deleteBtn;
 
+@property (strong, nonatomic) EZIoTResourceInfo *resourceInfo;
 
 @end
 
@@ -35,9 +38,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.resourceInfo = [EZIoTResourceInfo getResourcesByDeviceSerial:self.deviceInfo.deviceSerial].firstObject;
     self.navigationItem.title = self.deviceInfo.name;
     self.deviceNameLabel.text = self.deviceInfo.name;
-    self.resouceNameLabel.text = self.deviceInfo.resourceInfos.firstObject.name;
+    self.resouceNameLabel.text = self.resourceInfo.name;
     self.snLabel.text = self.deviceInfo.deviceSerial;
     self.VersionLabel.text = self.deviceInfo.version;
     self.statusLabel.text = self.deviceInfo.status == 1 ? @"在线" : @"离线";
@@ -48,7 +52,7 @@
     self.maskLabel.text = self.deviceInfo.wifiInfo.mask?:@"none";
     self.ssidLabel.text = self.deviceInfo.wifiInfo.ssid?:@"none";
     
-    if (self.deviceInfo.resourceInfos.firstObject.isShared != 0)
+    if (self.resourceInfo.isShared != 0)
     {
         self.deleteBtn.enabled = NO;
     }
@@ -58,16 +62,28 @@
 {
     [super viewWillAppear:animated];
     self.deviceNameLabel.text = self.deviceInfo.name;
-    self.resouceNameLabel.text = self.deviceInfo.resourceInfos.firstObject.name;
+    self.resouceNameLabel.text = self.resourceInfo.name;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    if (indexPath.section == 0 && (indexPath.row == 0 || indexPath.row == 1)) {
+    if (indexPath.section == 0 && indexPath.row == 0)
+    {
+        [self performSegueWithIdentifier: @"ShowPlayVC" sender:@"Preview"];
+    }
+    else if (indexPath.section == 0 && indexPath.row == 1)
+    {
+        [self performSegueWithIdentifier: @"ShowRecordListVC" sender:@"Device"];
+    }
+    else if (indexPath.section == 0 && indexPath.row == 2)
+    {
+        [self performSegueWithIdentifier: @"ShowRecordListVC" sender:@"Cloud"];
+    }
+    else if (indexPath.section == 1 && (indexPath.row == 0 || indexPath.row == 1)) {
         
-        if (self.deviceInfo.resourceInfos.firstObject.isShared == 0) {
+        if (self.resourceInfo.isShared == 0) {
             EZIoTSingleInputVC *vc = [[UIStoryboard storyboardWithName:@"Family" bundle:nil] instantiateViewControllerWithIdentifier:@"EZIoTSingleInputVC"];
             switch (indexPath.row) {
                 case 0:
@@ -87,11 +103,60 @@
             [self.view makeToast:@"需要家庭主人操作"  duration:3.0 position:CSToastPositionCenter];
         }
     }
+    else if (indexPath.section == 2)
+    {
+        NSData *jsonData = [self.deviceInfo.rnPackage dataUsingEncoding:NSUTF8StringEncoding];
+        NSError *err;
+        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                            options:NSJSONReadingMutableContainers
+                                                              error:&err];
+        
+        NSLog(@"Native Package:%@", self.deviceInfo.rnPackage);
+        
+        if (!dic || ![dic[@"rn_name"] isEqualToString:@"nativePanel"] || !dic[@"config"]) {
+            [self.view makeToast:@"未配置原生面板"  duration:3.0 position:CSToastPositionCenter];
+            return;
+        }
+        
+        NSData *jsonData1 = [dic[@"config"] dataUsingEncoding:NSUTF8StringEncoding];
+        NSError *err1;
+        NSDictionary *dic1 = [NSJSONSerialization JSONObjectWithData:jsonData1
+                                                            options:NSJSONReadingMutableContainers
+                                                              error:&err1];
+        
+        if (!dic1[@"payload"]) {
+            [self.view makeToast:@"未配置原生面板"  duration:3.0 position:CSToastPositionCenter];
+            return;
+        }
+        
+//        UIViewController *customPanel = [EZIoTPageResolver pageRoute:[NSURL URLWithString:dic1[@"payload"]]];
+//        if (!customPanel) {
+//            [self.view makeToast:@"原生未实现该面板"  duration:3.0 position:CSToastPositionCenter];
+//            return;
+//        }
+        
+//        [self.navigationController pushViewController:customPanel animated:YES];
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.destinationViewController isKindOfClass:[EZIoTVideoPlayerVC class]]) {
+        EZIoTVideoPlayerVC *vc = segue.destinationViewController;
+        vc.deviceInfo = self.deviceInfo;
+        vc.playeType = sender;
+    }
+    else
+    {
+        EZIoTRecordListVC *vc = segue.destinationViewController;
+        vc.deviceInfo = self.deviceInfo;
+        vc.recordType = sender;
+    }
 }
 
 - (IBAction)clickDeleteBtn:(id)sender {
     
-    if (self.deviceInfo.resourceInfos.firstObject.isShared == 0)
+    if (self.resourceInfo.isShared == 0)
     {
         UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"是否确认删除设备？" message:nil preferredStyle:UIAlertControllerStyleAlert];
 

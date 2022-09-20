@@ -7,10 +7,14 @@
 
 #import "AppDelegate.h"
 #import <EZIoTBaseSDK/EZIoTBaseSDK.h>
+#import <EZIoTBaseSDK/NSData+FastHex.h>
 #import <EZIoTUserSDK/EZIoTUserSDK.h>
+#import <EZIoTDebugSDK/EZIoTDebugSDK.h>
+#import <EZIoTRouter/EZIoTRouter.h>
+#import <EZIoTIPCSDK/EZIoTIPCGlobalSetting.h>
 #import <Toast/Toast.h>
 #import "EZIoTLoginHandle.h"
-
+#import <EZIoTBluetoothSDK/EZIoTDevControlManager.h>
 
 @interface AppDelegate ()
 
@@ -19,10 +23,10 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {   
+    
 #warning 初始化SDK, 请输入您的AppId
-    [self setupAppSDK:@"Your_AppId"];
+    [self setupAppSDK:@"377f3df63b2e41bf8625d955f0acd3ae"];
     
     if (@available(iOS 13.0, *)) {
       
@@ -75,11 +79,18 @@
 
 - (void) setupAppSDK:(NSString *)appId
 {
+    [EZIoTRouter setupRouter];
+    
     EZIoTBaseConfigParam *configParam = [EZIoTBaseConfigParam new];
     configParam.appId = appId;
+//    configParam.httpsUrl = @"test12.ys7.com";
     [EZIoTBaseGlobalSetting initSDKWithConfigParam:configParam];
     
     [EZIoTUserGlobalSetting initSDK];
+    
+    [EZIoTIPCGlobalSetting initSDK];
+    
+    [YSLogDefine setLogMode:EZIoTLogModeFileAndLog];
 }
 
 - (void)sessionError:(NSNotification *)notification
@@ -105,6 +116,17 @@
     
     [window.rootViewController.view makeToast:@"Session异常，请重新登录"  duration:2.0 position:CSToastPositionCenter];
 }
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    [EZIoTIPCGlobalSetting registerOnEnterBackground];
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    [EZIoTIPCGlobalSetting registerOnEnterForeground];
+}
+
 
 #pragma mark - UISceneSession lifecycle
 

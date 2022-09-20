@@ -10,7 +10,6 @@
 #import <EZIoTUserSDK/EZIoTUserInfo.h>
 #import <Toast/Toast.h>
 
-
 @interface EZIoTHomePageVC ()
 
 @property (weak, nonatomic) IBOutlet UILabel *curFamilyLabel;

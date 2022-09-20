@@ -53,20 +53,21 @@ static NSString *reuseIdentifier = @"EZIoTRoomMgrCell";
     
     __weak typeof(self) weakSelf = self;
     
-    NSMutableArray <EZIoTGroupDeviceInfo*> *groupDevices = [NSMutableArray array];
+    NSMutableArray <EZIoTRoomDeviceInfo*> *groupDevices = [NSMutableArray array];
     [self.selectedDevices enumerateObjectsUsingBlock:^(EZIoTDeviceInfo * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
-        obj.resourceInfos.firstObject.groupId = [EZIoTUserInfo getInstance].curGroupId;
+        EZIoTResourceInfo *resourceInfo = [EZIoTResourceInfo getResourcesByDeviceSerial:obj.deviceSerial needUnmanage:NO].firstObject;
+        resourceInfo.groupId = [EZIoTUserInfo getInstance].curGroupId;
         
-        EZIoTGroupDeviceInfo *groupDevice = [EZIoTGroupDeviceInfo new];
+        EZIoTRoomDeviceInfo *groupDevice = [EZIoTRoomDeviceInfo new];
         groupDevice.deviceSerial = obj.deviceSerial;
         groupDevice.familyId = [EZIoTUserInfo getInstance].curFamilyId;
-        groupDevice.groupId = [EZIoTUserInfo getInstance].curGroupId;
+        groupDevice.roomId = [EZIoTUserInfo getInstance].curGroupId;
         [groupDevices addObject:groupDevice];
     }];
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [EZIoTGroupManager groupDevicesOperationWithGroupId:[EZIoTUserInfo getInstance].curGroupId devices:groupDevices success:^{
+    [EZIoTRoomManager roomDevicesOperationWithRoomId:[EZIoTUserInfo getInstance].curGroupId devices:groupDevices success:^{
 
         //update DB
         [EZIoTDeviceManager createOrUpdateDevices:self.selectedDevices familyId:[EZIoTUserInfo getInstance].curFamilyId];

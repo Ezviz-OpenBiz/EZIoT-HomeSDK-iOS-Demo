@@ -1,5 +1,5 @@
 //
-//  EZIoTCreateGroupVC.h
+//  EZIoTRoomListVC.h
 //  EZIoTSmartSDKDemo
 //
 //  Created by yuqian on 2021/10/18.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface EZIoTCreateGroupVC : UITableViewController
+@interface EZIoTRoomListVC : UITableViewController
 
 @end
 

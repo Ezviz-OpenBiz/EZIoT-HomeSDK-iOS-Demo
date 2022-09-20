@@ -10,17 +10,34 @@
 		0C51F2662706A4AA006CBA75 /* EZIoTCreateFamilyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C51F2652706A4AA006CBA75 /* EZIoTCreateFamilyVC.m */; };
 		0C51F26C2706A604006CBA75 /* EZIoTFamilyListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C51F26B2706A604006CBA75 /* EZIoTFamilyListVC.m */; };
 		0C51F2702706A638006CBA75 /* EZIoTFamilyDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C51F26F2706A638006CBA75 /* EZIoTFamilyDetailVC.m */; };
-		668CF7513844CB5706F613D7 /* libPods-EZIoTHomeSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F809EB549510331671F8079E /* libPods-EZIoTHomeSDKDemo.a */; };
+		806F41C0ABD7E297CA58555B /* Pods_EZIoTHomeSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2BCB1FF40010FAC466282E /* Pods_EZIoTHomeSDKDemo.framework */; };
+		C410D68027DF2CAF004F310C /* TestAVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C410D67F27DF2CAF004F310C /* TestAVC.m */; };
+		C410D68327DF2DEC004F310C /* TestBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C410D68227DF2DEC004F310C /* TestBVC.m */; };
+		C410D69027E0891F004F310C /* EZIoTBleScanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C410D68F27E0891F004F310C /* EZIoTBleScanVC.m */; };
 		C43E5B602705895600184B30 /* EZIoTHomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C43E5B5F2705895600184B30 /* EZIoTHomePageVC.m */; };
+		C444301727E16A3400B5343E /* EZIoTBleControlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C444301627E16A3400B5343E /* EZIoTBleControlVC.m */; };
+		C444301A27E16A9200B5343E /* EZIoTBleUpgradeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C444301927E16A9200B5343E /* EZIoTBleUpgradeVC.m */; };
+		C444301D27E16AB100B5343E /* EZIoTBleDevInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C444301C27E16AB100B5343E /* EZIoTBleDevInfoVC.m */; };
+		C444302027E16AED00B5343E /* EZIoTBleDevMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C444301F27E16AED00B5343E /* EZIoTBleDevMainVC.m */; };
+		C444321127E1B8E300B5343E /* EZIoTVideoRhythmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C444320B27E1B8E300B5343E /* EZIoTVideoRhythmVC.m */; };
+		C444321227E1B8E300B5343E /* EZIoTVideoPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C444320C27E1B8E300B5343E /* EZIoTVideoPlayerVC.m */; };
+		C444321327E1B8E300B5343E /* EZIoTRecordListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C444320D27E1B8E300B5343E /* EZIoTRecordListVC.m */; };
+		C444321427E1B8E300B5343E /* EZIoTPaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = C444320E27E1B8E300B5343E /* EZIoTPaintView.m */; };
+		C4477D31288971D9004DF6AE /* BLE.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4477D30288971D8004DF6AE /* BLE.storyboard */; };
+		C447A4A7281692B2001FE325 /* EZIoTVoiceIntercomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C447A4A6281692B1001FE325 /* EZIoTVoiceIntercomVC.m */; };
+		C447A4A928169672001FE325 /* EZIoTIntercom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C447A4A828169672001FE325 /* EZIoTIntercom.storyboard */; };
+		C46279D927CF519A0012E887 /* EZIoTDebugVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C46279D827CF519A0012E887 /* EZIoTDebugVC.m */; };
 		C465464B272A47A2002A14E5 /* EZIoTModifyPwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C465464A272A47A2002A14E5 /* EZIoTModifyPwdVC.m */; };
 		C465464E272A4F6C002A14E5 /* EZIoTModifyContactVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C465464D272A4F6C002A14E5 /* EZIoTModifyContactVC.m */; };
+		C46BC3E22803B293005D668A /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4343675274F180000188402 /* VideoToolbox.framework */; };
+		C46BC3E32803B299005D668A /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4343677274F180E00188402 /* OpenAL.framework */; };
 		C48DF0792727D7E000BFE0CF /* EZIoTDeviceFeatureDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C48DF0782727D7E000BFE0CF /* EZIoTDeviceFeatureDetailVC.m */; };
 		C48DF0822728273E00BFE0CF /* EZIoTAlertInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = C48DF0812728273E00BFE0CF /* EZIoTAlertInputView.m */; };
 		C48DF0842728275800BFE0CF /* EZIoTAlertInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48DF0832728275800BFE0CF /* EZIoTAlertInputView.xib */; };
 		C48DF0872728F59600BFE0CF /* EZIoTSingleInputVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C48DF0862728F59600BFE0CF /* EZIoTSingleInputVC.m */; };
 		C48DF08C27294B4200BFE0CF /* EZIoTFamilyMemberInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C48DF08B27294B4200BFE0CF /* EZIoTFamilyMemberInfoVC.m */; };
-		C4A07C7A271D95C0009ED005 /* EZIoTGroupListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C79271D95C0009ED005 /* EZIoTGroupListVC.m */; };
-		C4A07C7D271D985F009ED005 /* EZIoTCreateGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C7C271D985F009ED005 /* EZIoTCreateGroupVC.m */; };
+		C4A07C7A271D95C0009ED005 /* EZIoTRoomListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C79271D95C0009ED005 /* EZIoTRoomListVC.m */; };
+		C4A07C7D271D985F009ED005 /* EZIoTCreateRoomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C7C271D985F009ED005 /* EZIoTCreateRoomVC.m */; };
 		C4A07C80271E97BA009ED005 /* EZIoTRoomMgrVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C7F271E97BA009ED005 /* EZIoTRoomMgrVC.m */; };
 		C4A07C83271E9821009ED005 /* EZIoTModifyRoomInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C82271E9821009ED005 /* EZIoTModifyRoomInfoVC.m */; };
 		C4A07C88271EB8EC009ED005 /* EZIoTFastApConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A07C87271EB8EC009ED005 /* EZIoTFastApConfigVC.m */; };
@@ -58,7 +75,21 @@
 		C4C6E1B22713D7E200366CF5 /* AddDevice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C6E1A92713D7E200366CF5 /* AddDevice.storyboard */; };
 		C4C6E1B32713D7E200366CF5 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C6E1AB2713D7E200366CF5 /* HomePage.storyboard */; };
 		C4C6E3212714636100366CF5 /* EZIoTLoginHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C6E3202714636100366CF5 /* EZIoTLoginHandle.m */; };
+		C4DA693127E36A0800EC0041 /* EZIoTBleWiFiConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DA693027E36A0800EC0041 /* EZIoTBleWiFiConfigVC.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C474B98627BE6ACA0098521B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0C51F2642706A4AA006CBA75 /* EZIoTCreateFamilyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTCreateFamilyVC.h; sourceTree = "<group>"; };
@@ -69,6 +100,15 @@
 		0C51F26F2706A638006CBA75 /* EZIoTFamilyDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTFamilyDetailVC.m; sourceTree = "<group>"; };
 		11A29DEAAC3B017FBEA87600 /* Pods-EZIoTHomeSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZIoTHomeSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-EZIoTHomeSDKDemo/Pods-EZIoTHomeSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5497D8CC7CCC70A6D8929CB9 /* Pods-EZIoTSmartSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZIoTSmartSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-EZIoTSmartSDKDemo/Pods-EZIoTSmartSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C410D67E27DF2CAF004F310C /* TestAVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAVC.h; sourceTree = "<group>"; };
+		C410D67F27DF2CAF004F310C /* TestAVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAVC.m; sourceTree = "<group>"; };
+		C410D68127DF2DEC004F310C /* TestBVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBVC.h; sourceTree = "<group>"; };
+		C410D68227DF2DEC004F310C /* TestBVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBVC.m; sourceTree = "<group>"; };
+		C410D68E27E0891F004F310C /* EZIoTBleScanVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTBleScanVC.h; sourceTree = "<group>"; };
+		C410D68F27E0891F004F310C /* EZIoTBleScanVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTBleScanVC.m; sourceTree = "<group>"; };
+		C4343675274F180000188402 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		C4343677274F180E00188402 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		C4343679274F183B00188402 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
 		C43E5B492703FEDC00184B30 /* EZIoTRegisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTRegisterVC.h; sourceTree = "<group>"; };
 		C43E5B4A2703FEDC00184B30 /* EZIoTRegisterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTRegisterVC.m; sourceTree = "<group>"; };
 		C43E5B4C2703FEF200184B30 /* EZIoTResetPwdVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTResetPwdVC.h; sourceTree = "<group>"; };
@@ -81,6 +121,28 @@
 		C43E5B5F2705895600184B30 /* EZIoTHomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTHomePageVC.m; sourceTree = "<group>"; };
 		C43E5B712705AB0600184B30 /* EZIoTPersionalnfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTPersionalnfoVC.h; sourceTree = "<group>"; };
 		C43E5B722705AB0600184B30 /* EZIoTPersionalnfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTPersionalnfoVC.m; sourceTree = "<group>"; };
+		C444301527E16A3400B5343E /* EZIoTBleControlVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTBleControlVC.h; sourceTree = "<group>"; };
+		C444301627E16A3400B5343E /* EZIoTBleControlVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTBleControlVC.m; sourceTree = "<group>"; };
+		C444301827E16A9200B5343E /* EZIoTBleUpgradeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTBleUpgradeVC.h; sourceTree = "<group>"; };
+		C444301927E16A9200B5343E /* EZIoTBleUpgradeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTBleUpgradeVC.m; sourceTree = "<group>"; };
+		C444301B27E16AB100B5343E /* EZIoTBleDevInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTBleDevInfoVC.h; sourceTree = "<group>"; };
+		C444301C27E16AB100B5343E /* EZIoTBleDevInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTBleDevInfoVC.m; sourceTree = "<group>"; };
+		C444301E27E16AED00B5343E /* EZIoTBleDevMainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTBleDevMainVC.h; sourceTree = "<group>"; };
+		C444301F27E16AED00B5343E /* EZIoTBleDevMainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTBleDevMainVC.m; sourceTree = "<group>"; };
+		C444320927E1B8E300B5343E /* EZIoTRecordListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZIoTRecordListVC.h; sourceTree = "<group>"; };
+		C444320A27E1B8E300B5343E /* EZIoTPaintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZIoTPaintView.h; sourceTree = "<group>"; };
+		C444320B27E1B8E300B5343E /* EZIoTVideoRhythmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZIoTVideoRhythmVC.m; sourceTree = "<group>"; };
+		C444320C27E1B8E300B5343E /* EZIoTVideoPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZIoTVideoPlayerVC.m; sourceTree = "<group>"; };
+		C444320D27E1B8E300B5343E /* EZIoTRecordListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZIoTRecordListVC.m; sourceTree = "<group>"; };
+		C444320E27E1B8E300B5343E /* EZIoTPaintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZIoTPaintView.m; sourceTree = "<group>"; };
+		C444320F27E1B8E300B5343E /* EZIoTVideoPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZIoTVideoPlayerVC.h; sourceTree = "<group>"; };
+		C444321027E1B8E300B5343E /* EZIoTVideoRhythmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZIoTVideoRhythmVC.h; sourceTree = "<group>"; };
+		C4477D30288971D8004DF6AE /* BLE.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BLE.storyboard; sourceTree = "<group>"; };
+		C447A4A5281692B1001FE325 /* EZIoTVoiceIntercomVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTVoiceIntercomVC.h; sourceTree = "<group>"; };
+		C447A4A6281692B1001FE325 /* EZIoTVoiceIntercomVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTVoiceIntercomVC.m; sourceTree = "<group>"; };
+		C447A4A828169672001FE325 /* EZIoTIntercom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EZIoTIntercom.storyboard; sourceTree = "<group>"; };
+		C46279D727CF519A0012E887 /* EZIoTDebugVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTDebugVC.h; sourceTree = "<group>"; };
+		C46279D827CF519A0012E887 /* EZIoTDebugVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTDebugVC.m; sourceTree = "<group>"; };
 		C4654649272A47A2002A14E5 /* EZIoTModifyPwdVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTModifyPwdVC.h; sourceTree = "<group>"; };
 		C465464A272A47A2002A14E5 /* EZIoTModifyPwdVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTModifyPwdVC.m; sourceTree = "<group>"; };
 		C465464C272A4F6C002A14E5 /* EZIoTModifyContactVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTModifyContactVC.h; sourceTree = "<group>"; };
@@ -94,10 +156,10 @@
 		C48DF0862728F59600BFE0CF /* EZIoTSingleInputVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTSingleInputVC.m; sourceTree = "<group>"; };
 		C48DF08A27294B4200BFE0CF /* EZIoTFamilyMemberInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTFamilyMemberInfoVC.h; sourceTree = "<group>"; };
 		C48DF08B27294B4200BFE0CF /* EZIoTFamilyMemberInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTFamilyMemberInfoVC.m; sourceTree = "<group>"; };
-		C4A07C78271D95C0009ED005 /* EZIoTGroupListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTGroupListVC.h; sourceTree = "<group>"; };
-		C4A07C79271D95C0009ED005 /* EZIoTGroupListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTGroupListVC.m; sourceTree = "<group>"; };
-		C4A07C7B271D985F009ED005 /* EZIoTCreateGroupVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTCreateGroupVC.h; sourceTree = "<group>"; };
-		C4A07C7C271D985F009ED005 /* EZIoTCreateGroupVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTCreateGroupVC.m; sourceTree = "<group>"; };
+		C4A07C78271D95C0009ED005 /* EZIoTRoomListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTRoomListVC.h; sourceTree = "<group>"; };
+		C4A07C79271D95C0009ED005 /* EZIoTRoomListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTRoomListVC.m; sourceTree = "<group>"; };
+		C4A07C7B271D985F009ED005 /* EZIoTCreateRoomVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTCreateRoomVC.h; sourceTree = "<group>"; };
+		C4A07C7C271D985F009ED005 /* EZIoTCreateRoomVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTCreateRoomVC.m; sourceTree = "<group>"; };
 		C4A07C7E271E97BA009ED005 /* EZIoTRoomMgrVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTRoomMgrVC.h; sourceTree = "<group>"; };
 		C4A07C7F271E97BA009ED005 /* EZIoTRoomMgrVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTRoomMgrVC.m; sourceTree = "<group>"; };
 		C4A07C81271E9821009ED005 /* EZIoTModifyRoomInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTModifyRoomInfoVC.h; sourceTree = "<group>"; };
@@ -153,8 +215,10 @@
 		C4C6E1AC2713D7E200366CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomePage.storyboard; sourceTree = "<group>"; };
 		C4C6E31F2714636100366CF5 /* EZIoTLoginHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTLoginHandle.h; sourceTree = "<group>"; };
 		C4C6E3202714636100366CF5 /* EZIoTLoginHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTLoginHandle.m; sourceTree = "<group>"; };
+		C4DA692F27E36A0800EC0041 /* EZIoTBleWiFiConfigVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTBleWiFiConfigVC.h; sourceTree = "<group>"; };
+		C4DA693027E36A0800EC0041 /* EZIoTBleWiFiConfigVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTBleWiFiConfigVC.m; sourceTree = "<group>"; };
 		D277D86CCC5058D0592B71AC /* Pods-EZIoTHomeSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZIoTHomeSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-EZIoTHomeSDKDemo/Pods-EZIoTHomeSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
-		F809EB549510331671F8079E /* libPods-EZIoTHomeSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EZIoTHomeSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED2BCB1FF40010FAC466282E /* Pods_EZIoTHomeSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZIoTHomeSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2C12E830CF6D6531BA1F97 /* Pods-EZIoTSmartSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZIoTSmartSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-EZIoTSmartSDKDemo/Pods-EZIoTSmartSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,7 +227,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				668CF7513844CB5706F613D7 /* libPods-EZIoTHomeSDKDemo.a in Frameworks */,
+				C46BC3E32803B299005D668A /* OpenAL.framework in Frameworks */,
+				C46BC3E22803B293005D668A /* VideoToolbox.framework in Frameworks */,
+				806F41C0ABD7E297CA58555B /* Pods_EZIoTHomeSDKDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,24 +276,48 @@
 		5C9FD84496788B0A027CA6AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4343679274F183B00188402 /* libiconv.2.4.0.tbd */,
+				C4343677274F180E00188402 /* OpenAL.framework */,
+				C4343675274F180000188402 /* VideoToolbox.framework */,
 				C4C6E1932713C57300366CF5 /* libresolv.9.tbd */,
 				C4C6E1912713C56900366CF5 /* libc++.tbd */,
-				F809EB549510331671F8079E /* libPods-EZIoTHomeSDKDemo.a */,
+				ED2BCB1FF40010FAC466282E /* Pods_EZIoTHomeSDKDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C410D68D27E088DE004F310C /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				C410D68E27E0891F004F310C /* EZIoTBleScanVC.h */,
+				C410D68F27E0891F004F310C /* EZIoTBleScanVC.m */,
+				C444301E27E16AED00B5343E /* EZIoTBleDevMainVC.h */,
+				C444301F27E16AED00B5343E /* EZIoTBleDevMainVC.m */,
+				C444301527E16A3400B5343E /* EZIoTBleControlVC.h */,
+				C444301627E16A3400B5343E /* EZIoTBleControlVC.m */,
+				C444301827E16A9200B5343E /* EZIoTBleUpgradeVC.h */,
+				C444301927E16A9200B5343E /* EZIoTBleUpgradeVC.m */,
+				C444301B27E16AB100B5343E /* EZIoTBleDevInfoVC.h */,
+				C444301C27E16AB100B5343E /* EZIoTBleDevInfoVC.m */,
+				C4DA692F27E36A0800EC0041 /* EZIoTBleWiFiConfigVC.h */,
+				C4DA693027E36A0800EC0041 /* EZIoTBleWiFiConfigVC.m */,
+			);
+			path = BLE;
 			sourceTree = "<group>";
 		};
 		C43E5B462703FE7400184B30 /* Busi */ = {
 			isa = PBXGroup;
 			children = (
+				C444320827E1B8E300B5343E /* IPC */,
 				C43E5B5C270588F700184B30 /* HamePage */,
 				0C51F2762706AACD006CBA75 /* AddDevice */,
 				C4A07C9C27228705009ED005 /* Device */,
 				0C51F2632706A478006CBA75 /* Family */,
 				C4A07C77271D9598009ED005 /* Group */,
+				C43E5B482703FEB800184B30 /* Mine */,
 				C4A07C8D271FFF8D009ED005 /* Message */,
 				C43E5B472703FE8500184B30 /* Login */,
-				C43E5B482703FEB800184B30 /* Mine */,
+				C410D68D27E088DE004F310C /* BLE */,
 			);
 			path = Busi;
 			sourceTree = "<group>";
@@ -244,6 +334,8 @@
 				C43E5B4D2703FEF200184B30 /* EZIoTResetPwdVC.m */,
 				C43E5B4F2703FF5B00184B30 /* EZIoTRegionOptionVC.h */,
 				C43E5B502703FF5B00184B30 /* EZIoTRegionOptionVC.m */,
+				C46279D727CF519A0012E887 /* EZIoTDebugVC.h */,
+				C46279D827CF519A0012E887 /* EZIoTDebugVC.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -274,13 +366,31 @@
 			path = HamePage;
 			sourceTree = "<group>";
 		};
+		C444320827E1B8E300B5343E /* IPC */ = {
+			isa = PBXGroup;
+			children = (
+				C444320F27E1B8E300B5343E /* EZIoTVideoPlayerVC.h */,
+				C444320C27E1B8E300B5343E /* EZIoTVideoPlayerVC.m */,
+				C444320927E1B8E300B5343E /* EZIoTRecordListVC.h */,
+				C444320D27E1B8E300B5343E /* EZIoTRecordListVC.m */,
+				C444321027E1B8E300B5343E /* EZIoTVideoRhythmVC.h */,
+				C444320B27E1B8E300B5343E /* EZIoTVideoRhythmVC.m */,
+				C444320A27E1B8E300B5343E /* EZIoTPaintView.h */,
+				C444320E27E1B8E300B5343E /* EZIoTPaintView.m */,
+				C447A4A5281692B1001FE325 /* EZIoTVoiceIntercomVC.h */,
+				C447A4A6281692B1001FE325 /* EZIoTVoiceIntercomVC.m */,
+				C447A4A828169672001FE325 /* EZIoTIntercom.storyboard */,
+			);
+			path = IPC;
+			sourceTree = "<group>";
+		};
 		C4A07C77271D9598009ED005 /* Group */ = {
 			isa = PBXGroup;
 			children = (
-				C4A07C78271D95C0009ED005 /* EZIoTGroupListVC.h */,
-				C4A07C79271D95C0009ED005 /* EZIoTGroupListVC.m */,
-				C4A07C7B271D985F009ED005 /* EZIoTCreateGroupVC.h */,
-				C4A07C7C271D985F009ED005 /* EZIoTCreateGroupVC.m */,
+				C4A07C78271D95C0009ED005 /* EZIoTRoomListVC.h */,
+				C4A07C79271D95C0009ED005 /* EZIoTRoomListVC.m */,
+				C4A07C7B271D985F009ED005 /* EZIoTCreateRoomVC.h */,
+				C4A07C7C271D985F009ED005 /* EZIoTCreateRoomVC.m */,
 				C4A07C7E271E97BA009ED005 /* EZIoTRoomMgrVC.h */,
 				C4A07C7F271E97BA009ED005 /* EZIoTRoomMgrVC.m */,
 				C4A07C81271E9821009ED005 /* EZIoTModifyRoomInfoVC.h */,
@@ -318,6 +428,10 @@
 				C48DF0782727D7E000BFE0CF /* EZIoTDeviceFeatureDetailVC.m */,
 				C4A07CA327228801009ED005 /* EZIoTDeviceSettingVC.h */,
 				C4A07CA427228801009ED005 /* EZIoTDeviceSettingVC.m */,
+				C410D67E27DF2CAF004F310C /* TestAVC.h */,
+				C410D67F27DF2CAF004F310C /* TestAVC.m */,
+				C410D68127DF2DEC004F310C /* TestBVC.h */,
+				C410D68227DF2DEC004F310C /* TestBVC.m */,
 				C48DF0802728273E00BFE0CF /* EZIoTAlertInputView.h */,
 				C48DF0812728273E00BFE0CF /* EZIoTAlertInputView.m */,
 				C48DF0832728275800BFE0CF /* EZIoTAlertInputView.xib */,
@@ -375,6 +489,7 @@
 		C4C6E19E2713D7E200366CF5 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				C4477D30288971D8004DF6AE /* BLE.storyboard */,
 				C4C6E1A52713D7E200366CF5 /* Main.storyboard */,
 				C4A07CA827228A29009ED005 /* Device.storyboard */,
 				C4A07CAB27228A53009ED005 /* Message.storyboard */,
@@ -410,8 +525,9 @@
 				C4A76C8F266DBE490024ABA8 /* Sources */,
 				C4A76C90266DBE490024ABA8 /* Frameworks */,
 				C4A76C91266DBE490024ABA8 /* Resources */,
-				B93136F1DA24DD9ADE52F065 /* [CP] Embed Pods Frameworks */,
-				31DA62A7DD36988E2A0774AA /* [CP] Copy Pods Resources */,
+				C474B98627BE6ACA0098521B /* Embed Frameworks */,
+				FF7A4B648A477FA8E21F89BF /* [CP] Embed Pods Frameworks */,
+				3D82CBD2F0554F3988420C24 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -458,6 +574,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C447A4A928169672001FE325 /* EZIoTIntercom.storyboard in Resources */,
 				C4A76CA3266DBE4D0024ABA8 /* Assets.xcassets in Resources */,
 				C4C6E1B12713D7E200366CF5 /* Login.storyboard in Resources */,
 				C4A07CAD27228A53009ED005 /* Message.storyboard in Resources */,
@@ -466,6 +583,7 @@
 				C48DF0842728275800BFE0CF /* EZIoTAlertInputView.xib in Resources */,
 				C4C6E1B22713D7E200366CF5 /* AddDevice.storyboard in Resources */,
 				C4C6E1B02713D7E200366CF5 /* Main.storyboard in Resources */,
+				C4477D31288971D9004DF6AE /* BLE.storyboard in Resources */,
 				C4C6E1AF2713D7E200366CF5 /* LaunchScreen.storyboard in Resources */,
 				C4A07CAA27228A29009ED005 /* Device.storyboard in Resources */,
 				C4A07CB327228A5B009ED005 /* SmartScene.storyboard in Resources */,
@@ -499,7 +617,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		31DA62A7DD36988E2A0774AA /* [CP] Copy Pods Resources */ = {
+		3D82CBD2F0554F3988420C24 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -516,7 +634,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EZIoTHomeSDKDemo/Pods-EZIoTHomeSDKDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B93136F1DA24DD9ADE52F065 /* [CP] Embed Pods Frameworks */ = {
+		FF7A4B648A477FA8E21F89BF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -540,6 +658,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C444301D27E16AB100B5343E /* EZIoTBleDevInfoVC.m in Sources */,
 				C4A07C9327200655009ED005 /* EZIoTMsgCategoryCell.m in Sources */,
 				C4A07C90271FFFC1009ED005 /* EZIoTMsgCategoryVC.m in Sources */,
 				C4A07CB72727881F009ED005 /* EZIoTDeviceSwitchCell.m in Sources */,
@@ -547,13 +666,18 @@
 				C4A07CBD27278885009ED005 /* EZIoTDeviceGenericCell.m in Sources */,
 				C4A07CBA27278858009ED005 /* EZIoTDeviceProgressCell.m in Sources */,
 				C4C6E1992713D4F300366CF5 /* EZIoTRegionOptionVC.m in Sources */,
+				C410D68027DF2CAF004F310C /* TestAVC.m in Sources */,
 				C4A76CA9266DBE4D0024ABA8 /* main.m in Sources */,
 				C4A2E5A12731498C003BEA87 /* EZIoTMsgSwitchVC.m in Sources */,
+				C444302027E16AED00B5343E /* EZIoTBleDevMainVC.m in Sources */,
 				C4C6E3212714636100366CF5 /* EZIoTLoginHandle.m in Sources */,
-				C4A07C7D271D985F009ED005 /* EZIoTCreateGroupVC.m in Sources */,
+				C4A07C7D271D985F009ED005 /* EZIoTCreateRoomVC.m in Sources */,
 				C465464E272A4F6C002A14E5 /* EZIoTModifyContactVC.m in Sources */,
+				C444321427E1B8E300B5343E /* EZIoTPaintView.m in Sources */,
 				C48DF08C27294B4200BFE0CF /* EZIoTFamilyMemberInfoVC.m in Sources */,
 				0C51F26C2706A604006CBA75 /* EZIoTFamilyListVC.m in Sources */,
+				C410D68327DF2DEC004F310C /* TestBVC.m in Sources */,
+				C4DA693127E36A0800EC0041 /* EZIoTBleWiFiConfigVC.m in Sources */,
 				C4A07C962720FA2C009ED005 /* EZIoTMsgListVC.m in Sources */,
 				C4A07CA2272287D3009ED005 /* EZIoTDeviceDetailVC.m in Sources */,
 				C4C6E19D2713D4F300366CF5 /* EZIoTMineVC.m in Sources */,
@@ -562,19 +686,27 @@
 				C43E5B602705895600184B30 /* EZIoTHomePageVC.m in Sources */,
 				C4A07C992720FA42009ED005 /* EZIoTMsgDetailVC.m in Sources */,
 				0C51F2662706A4AA006CBA75 /* EZIoTCreateFamilyVC.m in Sources */,
+				C444321227E1B8E300B5343E /* EZIoTVideoPlayerVC.m in Sources */,
 				C4C6E19A2713D4F300366CF5 /* EZIoTLoginVC.m in Sources */,
 				C4C6E1982713D4F300366CF5 /* EZIoTRegisterVC.m in Sources */,
 				0C51F2702706A638006CBA75 /* EZIoTFamilyDetailVC.m in Sources */,
-				C4A07C7A271D95C0009ED005 /* EZIoTGroupListVC.m in Sources */,
+				C4A07C7A271D95C0009ED005 /* EZIoTRoomListVC.m in Sources */,
 				C465464B272A47A2002A14E5 /* EZIoTModifyPwdVC.m in Sources */,
+				C410D69027E0891F004F310C /* EZIoTBleScanVC.m in Sources */,
+				C444321327E1B8E300B5343E /* EZIoTRecordListVC.m in Sources */,
 				C4A76C9B266DBE490024ABA8 /* SceneDelegate.m in Sources */,
+				C46279D927CF519A0012E887 /* EZIoTDebugVC.m in Sources */,
+				C444301727E16A3400B5343E /* EZIoTBleControlVC.m in Sources */,
 				C48DF0792727D7E000BFE0CF /* EZIoTDeviceFeatureDetailVC.m in Sources */,
 				C4A2E59E273116DD003BEA87 /* EZIoTDeviceListTypeVC.m in Sources */,
 				C4C6E19C2713D4F300366CF5 /* EZIoTResetPwdVC.m in Sources */,
+				C444321127E1B8E300B5343E /* EZIoTVideoRhythmVC.m in Sources */,
 				C4A07C88271EB8EC009ED005 /* EZIoTFastApConfigVC.m in Sources */,
 				C48DF0872728F59600BFE0CF /* EZIoTSingleInputVC.m in Sources */,
 				C4A07CA527228801009ED005 /* EZIoTDeviceSettingVC.m in Sources */,
 				C4A07C9F27228728009ED005 /* EZIoTDeviceListVC.m in Sources */,
+				C444301A27E16A9200B5343E /* EZIoTBleUpgradeVC.m in Sources */,
+				C447A4A7281692B2001FE325 /* EZIoTVoiceIntercomVC.m in Sources */,
 				C48DF0822728273E00BFE0CF /* EZIoTAlertInputView.m in Sources */,
 				C4C6E19B2713D4F300366CF5 /* EZIoTPersionalnfoVC.m in Sources */,
 			);
@@ -792,22 +924,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 211122;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 211124;
+				DEVELOPMENT_TEAM = SRN4RNBX5L;
 				ENABLE_BITCODE = NO;
-				EXCLUDED_ARCHS = "";
+				EXCLUDED_ARCHS = armv7;
 				INFOPLIST_FILE = "$(SRCROOT)/EZIoTHomeSDKDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EZIoTHomeSDKDemo/IPC/Libs/EZPlayer",
+				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ezviz.HomeSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezviz.smartLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = smartLife_develop;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -820,20 +956,24 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 211122;
+				CURRENT_PROJECT_VERSION = 211124;
 				DEVELOPMENT_TEAM = SRN4RNBX5L;
 				ENABLE_BITCODE = NO;
-				EXCLUDED_ARCHS = "";
+				EXCLUDED_ARCHS = armv7;
 				INFOPLIST_FILE = "$(SRCROOT)/EZIoTHomeSDKDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EZIoTHomeSDKDemo/IPC/Libs/EZPlayer",
+				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezviz.smartLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = OEMTest;
+				PROVISIONING_PROFILE_SPECIFIER = smartLife_distribution;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

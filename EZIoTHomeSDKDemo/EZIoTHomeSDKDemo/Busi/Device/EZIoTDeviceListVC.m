@@ -6,13 +6,13 @@
 //
 
 #import "EZIoTDeviceListVC.h"
-#import <MBProgressHUD/MBProgressHUD.h>
 #import <Toast/Toast.h>
 #import <EZIoTUserSDK/EZIoTUserInfo.h>
 #import <EZIoTDeviceSDK/EZIoTDeviceSDK.h>
 #import <MJRefresh/MJRefresh.h>
 #import "EZIoTDeviceDetailVC.h"
-
+//#import <EZIoTIPCSDK/EZIoTIPCGlobalSetting.h>
+#import "EZIoTIPCGlobalSetting.h"
 
 #define Device_Request_Limit  10
 
@@ -73,7 +73,9 @@ static NSString *reuseIdentifier = @"EZIoTDeviceListCell";
             weakSelf.devicesList = [NSMutableArray arrayWithArray:deviceInfoResp.devices];
             [weakSelf.tableView.mj_header endRefreshing];
             [weakSelf.tableView.mj_footer resetNoMoreData];
+            weakSelf.tableView.mj_header.hidden = YES;
             weakSelf.currentPage = 0;
+            
             if (!deviceInfoResp || deviceInfoResp.devices.count == 0) {
                 [weakSelf.tableView.mj_footer endRefreshingWithNoMoreData];
                 return;
@@ -89,6 +91,8 @@ static NSString *reuseIdentifier = @"EZIoTDeviceListCell";
         if (!deviceInfoResp.hasNext) {
             [weakSelf.tableView.mj_footer endRefreshingWithNoMoreData];
         }
+        
+        [EZIoTIPCGlobalSetting registerOnDevicesInsertOrUpdate:weakSelf.devicesList];
         
         weakSelf.deviceInfoResp = deviceInfoResp;
         NSLog(@"deviceInfoResp.devices: %@", deviceInfoResp.devices);
@@ -145,6 +149,14 @@ static NSString *reuseIdentifier = @"EZIoTDeviceListCell";
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self performSegueWithIdentifier: @"ShowDeviceDetail" sender:self.devicesList[indexPath.row]];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+    CGPoint point=scrollView.contentOffset;
+    if (point.y < -150) {
+        self.tableView.mj_header.hidden = NO;
+    }
 }
 
 @end

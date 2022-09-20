@@ -1,24 +1,24 @@
 //
-//  EZIoTCreateGroupVC.m
+//  EZIoTCreateRoomVC.m
 //  EZIoTSmartSDKDemo
 //
 //  Created by yuqian on 2021/10/18.
 //
 
-#import "EZIoTCreateGroupVC.h"
+#import "EZIoTCreateRoomVC.h"
 #import <EZIoTFamilySDK/EZIoTFamilySDK.h>
 #import <EZIoTUserSDK/EZIoTUserInfo.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <Toast/Toast.h>
 
 
-@interface EZIoTCreateGroupVC ()
+@interface EZIoTCreateRoomVC ()
 
 @property (weak, nonatomic) IBOutlet UITextField *roomNameInput;
 
 @end
 
-@implementation EZIoTCreateGroupVC
+@implementation EZIoTCreateRoomVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,7 +33,7 @@
     
     __weak typeof(self) weakSelf = self;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [EZIoTGroupManager createGroupWithFamilyId:[EZIoTUserInfo getInstance].curFamilyId groupName:self.roomNameInput.text success:^(NSString * _Nonnull groupId) {
+    [EZIoTRoomManager createRoomWithFamilyId:[EZIoTUserInfo getInstance].curFamilyId roomName:self.roomNameInput.text success:^(NSString * _Nonnull groupId) {
         [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
         [weakSelf.view makeToast:@"创建成功"  duration:3.0 position:CSToastPositionCenter];
         [weakSelf.navigationController popViewControllerAnimated:YES];

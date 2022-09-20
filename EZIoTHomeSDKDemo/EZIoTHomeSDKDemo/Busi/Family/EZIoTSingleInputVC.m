@@ -114,7 +114,10 @@
     }
     else if ([self.type isEqualToString:@"AddMember"])
     {
-        [EZIoTFamilyManager inviteFamilyMemberWithFamilyId:[EZIoTUserInfo getInstance].curFamilyId invitedAccount:self.inputField.text success:^{
+        [EZIoTFamilyManager inviteFamilyMemberWithFamilyId:[EZIoTUserInfo getInstance].curFamilyId
+                                                 phoneCode:[EZIoTUserInfo getInstance].areaInfo.phoneCode
+                                            invitedAccount:self.inputField.text
+                                                   success:^{
             
             [weakSelf.view endEditing:YES];
             
@@ -204,10 +207,11 @@
     }
     else if ([self.type isEqualToString:@"ModifyResourceName"]) {
         
-        [EZIoTDeviceManager modifyResourceName:self.inputField.text resourceId:self.deviceInfo.resourceInfos.firstObject.resourceId success:^{
+        EZIoTResourceInfo *resourceInfo = [EZIoTResourceInfo getResourcesByDeviceSerial:self.deviceInfo.deviceSerial].firstObject;
+        [EZIoTDeviceManager modifyResourceName:self.inputField.text resourceId:resourceInfo.resourceId success:^{
             
             [weakSelf.view endEditing:YES];
-            weakSelf.deviceInfo.resourceInfos.firstObject.name = weakSelf.inputField.text;
+            resourceInfo.name = weakSelf.inputField.text;
             [weakSelf.navigationController.view makeToast:@"修改成功"  duration:2.0 position:CSToastPositionCenter];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];

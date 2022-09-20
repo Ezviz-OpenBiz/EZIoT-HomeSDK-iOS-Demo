@@ -1,11 +1,11 @@
 //
-//  EZIoTGroupListVC.m
+//  EZIoTRoomListVC.m
 //  EZIoTSmartSDKDemo
 //
 //  Created by yuqian on 2021/10/18.
 //
 
-#import "EZIoTGroupListVC.h"
+#import "EZIoTRoomListVC.h"
 #import <EZIoTFamilySDK/EZIoTFamilySDK.h>
 #import <EZIoTDeviceSDK/EZIoTDeviceSDK.h>
 #import <EZIoTUserSDK/EZIoTUserInfo.h>
@@ -14,13 +14,13 @@
 
 static NSString *reusedCellId = @"EZIoTGroupListCell";
 
-@interface EZIoTGroupListVC ()
+@interface EZIoTRoomListVC ()
 
-@property(nonatomic,strong) NSMutableArray <EZIoTGroupInfo *> *groupInfos;
+@property(nonatomic,strong) NSMutableArray <EZIoTRoomInfo *> *roomInfos;
 
 @end
 
-@implementation EZIoTGroupListVC
+@implementation EZIoTRoomListVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,22 +32,22 @@ static NSString *reusedCellId = @"EZIoTGroupListCell";
 {
     __weak typeof(self) weakSelf = self;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [EZIoTGroupManager getGroupListWithFamilyId:[EZIoTUserInfo getInstance].curFamilyId success:^(NSArray<EZIoTGroupInfo *> * _Nonnull groupInfos) {
+    [EZIoTRoomManager getRoomListWithFamilyId:[EZIoTUserInfo getInstance].curFamilyId success:^(NSArray<EZIoTRoomInfo *> * _Nonnull roomInfos) {
         
-        NSLog(@"groupInfos: %@", groupInfos);
+        NSLog(@"groupInfos: %@", roomInfos);
         [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
-        weakSelf.groupInfos = [NSMutableArray arrayWithArray:groupInfos];;
+        weakSelf.roomInfos = [NSMutableArray arrayWithArray:roomInfos];;
         [weakSelf.tableView reloadData];
         
         if ([EZIoTUserInfo getInstance].defaultGroupId.length == 0)
         {
-            for (EZIoTGroupInfo *groupInfo in groupInfos)
+            for (EZIoTRoomInfo *roomInfo in roomInfos)
             {
-                if (groupInfo.isDefaultGroup)
+                if (roomInfo.isDefaultRoom)
                 {
-                    [EZIoTUserInfo getInstance].defaultGroupId = groupInfo.groupId;
-                    [EZIoTUserInfo getInstance].curGroupId = groupInfo.groupId;
-                    [EZIoTUserInfo getInstance].curGroupName = groupInfo.groupName;
+                    [EZIoTUserInfo getInstance].defaultGroupId = roomInfo.roomId;
+                    [EZIoTUserInfo getInstance].curGroupId = roomInfo.roomId;
+                    [EZIoTUserInfo getInstance].curGroupName = roomInfo.roomName;
                 }
             }
         }
@@ -66,7 +66,7 @@ static NSString *reusedCellId = @"EZIoTGroupListCell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.groupInfos.count;
+    return self.roomInfos.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -85,8 +85,8 @@ static NSString *reusedCellId = @"EZIoTGroupListCell";
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
     
-    [EZIoTUserInfo getInstance].curGroupId = self.groupInfos[indexPath.row].groupId;
-    [EZIoTUserInfo getInstance].curGroupName = self.groupInfos[indexPath.row].groupName;
+    [EZIoTUserInfo getInstance].curGroupId = self.roomInfos[indexPath.row].roomId;
+    [EZIoTUserInfo getInstance].curGroupName = self.roomInfos[indexPath.row].roomName;
     
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
@@ -120,16 +120,16 @@ static NSString *reusedCellId = @"EZIoTGroupListCell";
 
 - (void)setupCell:(UITableViewCell *)cell indexPath:(NSIndexPath *)indexPath
 {
-    EZIoTGroupInfo *groupInfo = self.groupInfos[indexPath.row];
+    EZIoTRoomInfo *roomInfo = self.roomInfos[indexPath.row];
 
-    cell.textLabel.text = groupInfo.groupName;
+    cell.textLabel.text = roomInfo.roomName;
     
 //    if (groupInfo.isDefaultGroup)
 //        cell.detailTextLabel.text = [NSString stringWithFormat:@"%lu台设备", (unsigned long)[EZIoTDeviceManager getLocalDevicesWithFamilyId:groupInfo.familyId].count];
 //    else
 //        cell.detailTextLabel.text = [NSString stringWithFormat:@"%lu台设备", (unsigned long)[EZIoTDeviceManager getLocalDevicesWithFamilyId:groupInfo.familyId groupId:groupInfo.groupId].count];
     
-    if ([EZIoTUserInfo getInstance].curGroupId == groupInfo.groupId)
+    if ([EZIoTUserInfo getInstance].curGroupId == roomInfo.roomId)
     {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
@@ -141,32 +141,32 @@ static NSString *reusedCellId = @"EZIoTGroupListCell";
 
 - (void) deleteSelectIndexPath:(NSIndexPath *)indexPath
 {
-    EZIoTGroupInfo *groupInfo = self.groupInfos[indexPath.row];
+    EZIoTRoomInfo *roomInfo = self.roomInfos[indexPath.row];
     
     __weak typeof(self) weakSelf = self;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
-    EZIoTGroupInfo *targetGroupInfo;
-    for (EZIoTGroupInfo *g in self.groupInfos) {
-        if (![g.groupId isEqualToString:groupInfo.groupId]) {
-            targetGroupInfo = g;
+    EZIoTRoomInfo *targetRoomInfo;
+    for (EZIoTRoomInfo *g in self.roomInfos) {
+        if (![g.roomId isEqualToString:roomInfo.roomId]) {
+            targetRoomInfo = g;
             break;
         }
     }
     
-    [EZIoTGroupManager deleteGroupWithFamilyId:groupInfo.familyId groupId:groupInfo.groupId targetGroupId:targetGroupInfo.groupId success:^{
+    [EZIoTRoomManager deleteRoomWithFamilyId:roomInfo.familyId roomId:roomInfo.roomId targetRoomId:targetRoomInfo.roomId success:^{
            
-        NSLog(@"删除成功：%@", groupInfo.groupId);
+        NSLog(@"删除成功：%@", roomInfo.roomId);
         [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
         
         //update current group info
-        if ([EZIoTUserInfo getInstance].curGroupId == groupInfo.groupId)
+        if ([EZIoTUserInfo getInstance].curGroupId == roomInfo.roomId)
         {
-            [EZIoTUserInfo getInstance].curGroupId = targetGroupInfo.groupId;
-            [EZIoTUserInfo getInstance].curGroupName = targetGroupInfo.groupName;
+            [EZIoTUserInfo getInstance].curGroupId = targetRoomInfo.roomId;
+            [EZIoTUserInfo getInstance].curGroupName = targetRoomInfo.roomName;
         }
         
-        [weakSelf.groupInfos removeObject:groupInfo];
+        [weakSelf.roomInfos removeObject:roomInfo];
         
         [weakSelf.tableView reloadData];
         

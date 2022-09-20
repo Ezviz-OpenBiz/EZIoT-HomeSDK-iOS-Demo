@@ -89,7 +89,7 @@
     
     __weak typeof(self) weakSelf = self;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [EZIoTFamilyManager memberInviteOperationWithFamilyId:self.customDic[@"familyId"] memberId:self.customDic[@"memberId"] status:YES success:^{
+    [EZIoTFamilyManager memberInviteOperationWithFamilyId:self.customDic[@"familyId"] memberId:self.customDic[@"memberId"] status:1 success:^{
             
         weakSelf.agreeBtn.hidden = YES;
         weakSelf.refuseBtn.hidden = YES;
@@ -113,7 +113,7 @@
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [EZIoTFamilyManager memberInviteOperationWithFamilyId:self.customDic[@"familyId"]
                                                  memberId:self.customDic[@"memberId"]
-                                                   status:NO
+                                                   status:2
                                                   success:^{
             
         weakSelf.agreeBtn.hidden = YES;

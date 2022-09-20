@@ -11,6 +11,8 @@
 #import <Toast/Toast.h>
 #import <Masonry/Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+//#import <EZIoTIPCSDK/EZIoTIPCGlobalSetting.h>
+#import "EZIoTIPCGlobalSetting.h"
 
 
 static NSString *TableReusedID = @"mineCell";
@@ -64,6 +66,8 @@ static NSString *TableReusedID = @"mineCell";
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [EZIoTUserAccountManager logoutWithSuccess:^{
             
+        [EZIoTIPCGlobalSetting registerOnLogout];
+        
         [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
         [[EZIoTUserInfo getInstance] clearForLoginOut];
         UIViewController *vc = [UIStoryboard storyboardWithName:@"Main" bundle:nil].instantiateInitialViewController;
