@@ -8,11 +8,11 @@
 #import "EZIoTRecordListVC.h"
 #import "EZIoTVideoPlayerVC.h"
 
-#import "EZIoTDeviceRecordManger.h"
-#import "EZIoTCloudRecordManager.h"
-#import "EZIoTLocalFile.h"
-#import "EZIoTCloudDayInfo.h"
-#import "EZIoTCloudFile.h"
+#import <EZIoTIPCSDK/EZIoTDeviceRecordManger.h>
+#import <EZIoTIPCSDK/EZIoTCloudRecordManager.h>
+#import <EZIoTIPCSDK/EZIoTLocalFile.h>
+#import <EZIoTIPCSDK/EZIoTCloudDayInfo.h>
+#import <EZIoTIPCSDK/EZIoTCloudFile.h>
 
 #import <FSCalendar/FSCalendar.h>
 #import <MBProgressHUD/MBProgressHUD.h>

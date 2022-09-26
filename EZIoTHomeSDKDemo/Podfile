@@ -9,7 +9,7 @@ target 'EZIoTHomeSDKDemo' do
     pod 'MBProgressHUD', '~> 1.2.0'
     pod 'SDWebImage', '~> 5.10.0'
     pod 'MJRefresh', '~> 3.7.2'
-    pod 'EZIoTHomeSDK', '~> 1.0.0'
+    pod 'EZIoTHomeSDK', '~> 1.1.0'
 end
 
 

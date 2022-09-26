@@ -11,8 +11,7 @@
 #import <EZIoTDeviceSDK/EZIoTDeviceSDK.h>
 #import <MJRefresh/MJRefresh.h>
 #import "EZIoTDeviceDetailVC.h"
-//#import <EZIoTIPCSDK/EZIoTIPCGlobalSetting.h>
-#import "EZIoTIPCGlobalSetting.h"
+#import <EZIoTIPCSDK/EZIoTIPCGlobalSetting.h>
 
 #define Device_Request_Limit  10
 

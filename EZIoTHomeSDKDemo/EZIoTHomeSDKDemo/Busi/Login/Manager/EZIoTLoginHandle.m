@@ -10,20 +10,19 @@
 #import <EZIoTBaseSDK/YSDCLog.h>
 #import <EZIoTBaseSDK/YSConfigInformation.h>
 #import <EZIoTUserSDK/EZIoTUserSDK.h>
-//#import <EZIoTUserSDK/EZIoTLoginConfigTool.h>
+#import <EZIoTUserSDK/EZIoTLoginConfigTool.h>
 #import <EZIoTNetConfigSDK/EZIoTNetConfigSDK.h>
-//#import <EZIoTIPCSDK/EZIoTIPCGlobalSetting.h>
-#import "EZIoTIPCGlobalSetting.h"
+#import <EZIoTIPCSDK/EZIoTIPCGlobalSetting.h>
 
 @implementation EZIoTLoginHandle
 
 + (void) loginSuccessHandle
 {
-//    [EZIoTLoginConfigTool startRequestSystemConfiguration:^{
-//        NSLog(@"");
-//    } failure:^(NSError * _Nonnull error) {
-//        NSLog(@"");
-//    }];
+    [EZIoTLoginConfigTool startRequestSystemConfiguration:^{
+        NSLog(@"");
+    } failure:^(NSError * _Nonnull error) {
+        NSLog(@"");
+    }];
     
     [EZIoTIPCGlobalSetting registerOnLoginSuccess];
     
@@ -34,7 +33,6 @@
         
     } logServerBlock:^NSString *{
         return [YSConfigInformation getDCLogAddress];
-//        return @"https://test12dclog.ys7.com";
         
     } systemNamePrefixBlock:^NSString *{
         return @"iot_";

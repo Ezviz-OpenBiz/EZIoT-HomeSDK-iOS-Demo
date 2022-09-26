@@ -8,7 +8,6 @@
 #import "EZIoTBleControlVC.h"
 #import <Toast/Toast.h>
 #import <MBProgressHUD/MBProgressHUD.h>
-#import <EZIoTDeviceControlSDK/EZIoTOtapControlMgr.h>
 #import <EZIoTBluetoothSDK/EZIoTFeatureLiteConfigParam.h>
 #import <EZIoTBluetoothSDK/EZIoTBLECenterMgr.h>
 
@@ -25,13 +24,10 @@
 
 @end
 
-BOOL aa;
-
 @implementation EZIoTBleControlVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    aa = NO;
     [self.ezPeripheral getNegotiatedMtu];
 }
 
@@ -109,11 +105,6 @@ BOOL aa;
 //    paramLite.identifier = 6;
 //    paramLite.valueType = EZIoTFeatureValueTypeObject;
 //    paramLite.value = @{@"timeZone":@"UTC+08:00", @"daylightSavingTime":@0};
-    paramLite.domain = 914;
-    paramLite.identifier = 1;
-    paramLite.valueType = EZIoTFeatureValueTypeObject;
-    aa = !aa;
-    paramLite.value = @{@"calorie":@0, @"jumping":@(aa), @"speed":@0, @"time":@0,@"count":@0, @"mode":@"free"};
     
     __weak typeof(self) weakSelf = self;
     [[EZIoTBLECenterMgr sharedInstance] setPropFeature:self.ezPeripheral.devSerial configParam:paramLite completion:^(EZIoTPeripheral * _Nullable peripheral,EZIoTFeatureLiteConfigParam * _Nullable value, NSError * _Nullable error) {

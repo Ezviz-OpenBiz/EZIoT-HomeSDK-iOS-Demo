@@ -6,11 +6,11 @@
 //
 
 #import "EZIoTMsgDetailVC.h"
+#import <MJExtension/MJExtension.h>
 #import <EZIoTMessageSDK/EZIoTMsgInfo.h>
 #import <EZIoTFamilySDK/EZIoTFamilySDK.h>
 #import <EZIoTUserSDK/EZIoTUserInfo.h>
 #import <MBProgressHUD/MBProgressHUD.h>
-#import <MJExtension/MJExtension.h>
 #import <Toast/Toast.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 

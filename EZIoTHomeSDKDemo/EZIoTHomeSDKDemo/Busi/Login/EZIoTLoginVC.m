@@ -11,8 +11,7 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <Toast/Toast.h>
 #import "EZIoTLoginHandle.h"
-//#import <EZIoTIPCSDK/EZIoTIPCGlobalSetting.h>
-#import "EZIoTIPCGlobalSetting.h"
+#import <EZIoTIPCSDK/EZIoTIPCGlobalSetting.h>
 
 @interface EZIoTLoginVC ()
 

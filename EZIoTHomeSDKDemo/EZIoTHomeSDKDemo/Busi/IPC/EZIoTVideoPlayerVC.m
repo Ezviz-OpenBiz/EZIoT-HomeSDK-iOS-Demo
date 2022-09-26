@@ -11,10 +11,10 @@
 #import <EZIoTDeviceSDK/EZIoTDeviceInfo+Extension.h>
 #import <EZIoTDeviceSDK/EZIoTResourceInfo+AccessDB.h>
 
-#import "EZIoTLocalFile.h"
-#import "EZIoTCloudFile.h"
-#import "EZIoTVideoPlayer.h"
-#import "EZIoTIntercomPlayer.h"
+#import <EZIoTIPCSDK/EZIoTLocalFile.h>
+#import <EZIoTIPCSDK/EZIoTCloudFile.h>
+#import <EZIoTIPCSDK/EZIoTVideoPlayer.h>
+#import <EZIoTIPCSDK/EZIoTIntercomPlayer.h>
 #import "EZIoTVideoRhythmVC.h"
 
 

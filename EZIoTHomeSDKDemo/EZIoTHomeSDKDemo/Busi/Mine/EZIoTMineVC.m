@@ -11,8 +11,7 @@
 #import <Toast/Toast.h>
 #import <Masonry/Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>
-//#import <EZIoTIPCSDK/EZIoTIPCGlobalSetting.h>
-#import "EZIoTIPCGlobalSetting.h"
+#import <EZIoTIPCSDK/EZIoTIPCGlobalSetting.h>
 
 
 static NSString *TableReusedID = @"mineCell";

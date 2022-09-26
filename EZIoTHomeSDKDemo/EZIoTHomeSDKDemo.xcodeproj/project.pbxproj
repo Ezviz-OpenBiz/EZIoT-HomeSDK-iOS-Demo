@@ -10,7 +10,7 @@
 		0C51F2662706A4AA006CBA75 /* EZIoTCreateFamilyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C51F2652706A4AA006CBA75 /* EZIoTCreateFamilyVC.m */; };
 		0C51F26C2706A604006CBA75 /* EZIoTFamilyListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C51F26B2706A604006CBA75 /* EZIoTFamilyListVC.m */; };
 		0C51F2702706A638006CBA75 /* EZIoTFamilyDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C51F26F2706A638006CBA75 /* EZIoTFamilyDetailVC.m */; };
-		806F41C0ABD7E297CA58555B /* Pods_EZIoTHomeSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2BCB1FF40010FAC466282E /* Pods_EZIoTHomeSDKDemo.framework */; };
+		3C7C07E2BD7E1DC24FC16DC8 /* Pods_EZIoTHomeSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454B6F1775AF88B707A51993 /* Pods_EZIoTHomeSDKDemo.framework */; };
 		C410D68027DF2CAF004F310C /* TestAVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C410D67F27DF2CAF004F310C /* TestAVC.m */; };
 		C410D68327DF2DEC004F310C /* TestBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C410D68227DF2DEC004F310C /* TestBVC.m */; };
 		C410D69027E0891F004F310C /* EZIoTBleScanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C410D68F27E0891F004F310C /* EZIoTBleScanVC.m */; };
@@ -99,6 +99,7 @@
 		0C51F26E2706A638006CBA75 /* EZIoTFamilyDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTFamilyDetailVC.h; sourceTree = "<group>"; };
 		0C51F26F2706A638006CBA75 /* EZIoTFamilyDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTFamilyDetailVC.m; sourceTree = "<group>"; };
 		11A29DEAAC3B017FBEA87600 /* Pods-EZIoTHomeSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZIoTHomeSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-EZIoTHomeSDKDemo/Pods-EZIoTHomeSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		454B6F1775AF88B707A51993 /* Pods_EZIoTHomeSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZIoTHomeSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5497D8CC7CCC70A6D8929CB9 /* Pods-EZIoTSmartSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZIoTSmartSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-EZIoTSmartSDKDemo/Pods-EZIoTSmartSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C410D67E27DF2CAF004F310C /* TestAVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAVC.h; sourceTree = "<group>"; };
 		C410D67F27DF2CAF004F310C /* TestAVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAVC.m; sourceTree = "<group>"; };
@@ -218,7 +219,6 @@
 		C4DA692F27E36A0800EC0041 /* EZIoTBleWiFiConfigVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZIoTBleWiFiConfigVC.h; sourceTree = "<group>"; };
 		C4DA693027E36A0800EC0041 /* EZIoTBleWiFiConfigVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZIoTBleWiFiConfigVC.m; sourceTree = "<group>"; };
 		D277D86CCC5058D0592B71AC /* Pods-EZIoTHomeSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZIoTHomeSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-EZIoTHomeSDKDemo/Pods-EZIoTHomeSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
-		ED2BCB1FF40010FAC466282E /* Pods_EZIoTHomeSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZIoTHomeSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2C12E830CF6D6531BA1F97 /* Pods-EZIoTSmartSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZIoTSmartSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-EZIoTSmartSDKDemo/Pods-EZIoTSmartSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -229,7 +229,7 @@
 			files = (
 				C46BC3E32803B299005D668A /* OpenAL.framework in Frameworks */,
 				C46BC3E22803B293005D668A /* VideoToolbox.framework in Frameworks */,
-				806F41C0ABD7E297CA58555B /* Pods_EZIoTHomeSDKDemo.framework in Frameworks */,
+				3C7C07E2BD7E1DC24FC16DC8 /* Pods_EZIoTHomeSDKDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +281,7 @@
 				C4343675274F180000188402 /* VideoToolbox.framework */,
 				C4C6E1932713C57300366CF5 /* libresolv.9.tbd */,
 				C4C6E1912713C56900366CF5 /* libc++.tbd */,
-				ED2BCB1FF40010FAC466282E /* Pods_EZIoTHomeSDKDemo.framework */,
+				454B6F1775AF88B707A51993 /* Pods_EZIoTHomeSDKDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -527,7 +527,7 @@
 				C4A76C91266DBE490024ABA8 /* Resources */,
 				C474B98627BE6ACA0098521B /* Embed Frameworks */,
 				FF7A4B648A477FA8E21F89BF /* [CP] Embed Pods Frameworks */,
-				3D82CBD2F0554F3988420C24 /* [CP] Copy Pods Resources */,
+				ADF77BF585388DBF1D3EC14F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -617,7 +617,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3D82CBD2F0554F3988420C24 /* [CP] Copy Pods Resources */ = {
+		ADF77BF585388DBF1D3EC14F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -941,6 +941,10 @@
 					"$(PROJECT_DIR)/EZIoTHomeSDKDemo/IPC/Libs/EZPlayer",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezviz.smartLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = smartLife_develop;
@@ -971,6 +975,10 @@
 					"$(PROJECT_DIR)/EZIoTHomeSDKDemo/IPC/Libs/EZPlayer",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezviz.smartLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = smartLife_distribution;
